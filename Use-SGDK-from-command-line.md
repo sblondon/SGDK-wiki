@@ -5,9 +5,9 @@ Installation and use of SGDK from command line (Windows OS only).
 3. Define _GDK_WIN_ which still point to your installation path but in windows format (exemple D:\sgdk).
 4. Add the _bin_ directory of devkit (%GDK_WIN%\bin) to your PATH variable. Be careful, if you have another GCC installation you can have some conflicts when cc1 command will be called...
 5. Now you can compile the library by using
-`%GDK_WIN%\bin\make -f %GDK_WIN%\makelib.gen`
+<pre>%GDK_WIN%\bin\make -f %GDK_WIN%\makelib.gen</pre>
 When the library is compiled you should obtain the following files
-`%GDK%/lib/libmd.a`
+    %GDK%/lib/libmd.a
 
 Before compiling your own project you first need to respect the following constraint in your project source tree:
   * sources files (C, S, ASM, S80): root directory or _src_ directory

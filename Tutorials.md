@@ -15,7 +15,7 @@ So, before you start reading the tutorials, be sure to check and read these othe
 
 ## Hello World ##
 
-Whenever you use [Code::Block](UseSGDKWithCB.md), [Eclipse](UseSGDKWithEclipse.md), [Notepad](HowToUseSGDK.md) or any other souce code editor, you need your `main` function.
+Whenever you use [Code::Block](UseSGDKWithCB.md), [Eclipse](UseSGDKWithEclipse.md), [Notepad](Use-SGDK-from-command-line.md) or any other souce code editor, you need your `main` function.
 
 ```
 int main( )

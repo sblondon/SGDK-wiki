@@ -1,16 +1,3 @@
-## Table of Content ##
-  1. **[Introduction](#Introduction.md)**
-  1. **[Hello World !](#Hello_World.md)**
-  1. **[Read the joypad](#Input.md)**
-  1. **[Tiles](#Tiles.md)**
-  1. **[Sprites](#Sprites.md)**
-  1. _more_
-  1. **[History and changes](#History.md)**
-
-
----
-
-
 ## Introduction ##
 These several basic tutorials aim to give you the basis to start developing on the Sega Genesis / Megadrive using SGDK.
 

@@ -5,14 +5,9 @@ Installation and use of SGDK from command line (Windows OS only).
 3. Define _GDK_WIN_ which still point to your installation path but in windows format (exemple D:\sgdk).
 4. Add the _bin_ directory of devkit (%GDK_WIN%\bin) to your PATH variable. Be careful, if you have another GCC installation you can have some conflicts when cc1 command will be called...
 5. Now you can compile the library by using
- {{{
- %GDK_WIN%\bin\make -f %GDK_WIN%\makelib.gen
- }}}
-
+    %GDK_WIN%\bin\make -f %GDK_WIN%\makelib.gen
 When the library is compiled you should obtain the following files
- {{{
- %GDK%/lib/libmd.a
- }}}
+    %GDK%/lib/libmd.a
 
 Before compiling your own project you first need to respect the following constraint in your project source tree:
   * sources files (C, S, ASM, S80): root directory or _src_ directory
@@ -21,8 +16,6 @@ Before compiling your own project you first need to respect the following constr
   * others resources files (TFC, TFD, PCM, RAW, WAV, BIN, BMP, PNG): can be wherever you want while you are referring them correctly in your resource definition files
 
 Then to compile your project you need to use the following command directly from your project directory :
- {{{
- %GDK_WIN%\bin\make -f %GDK_WIN%\makefile.gen
- }}}
+    %GDK_WIN%\bin\make -f %GDK_WIN%\makefile.gen
 
 Normally you should obtain a rom.bin file in the out directory that you can load in an emulator (or directly on the hardware if you are a lucky owner of a flash cart).

@@ -1,20 +1,27 @@
+#summary Installation and use of SGDK from command line (Windows OS only).
+#labels Phase-Deploy
 
-```
+ # Download the SGDK archive from the [https://code.google.com/p/sgdk/wiki/Download?tm=2 Download page] and unzip it where it suits to you (for instance D:/sgdk).
+ # Define _GDK_ environment variable to your installation path in unix path format (example D:/sgdk).
+ # Define _GDK_WIN_ which still point to your installation path but in windows format (exemple D:\sgdk).
+ # Add the _bin_ directory of devkit (%GDK_WIN%\bin) to your PATH variable. Be careful, if you have another GCC installation you can have some conflicts when cc1 command will be called...
+ # Now you can compile the library by using
+{{{
 %GDK_WIN%\bin\make -f %GDK_WIN%\makelib.gen
-```
-  1. When the library is compiled you should obtain the following files
-```
+}}}
+ # When the library is compiled you should obtain the following files
+{{{
 %GDK%/lib/libmd.a
-```
-  1. Before compiling your own project you first need to respect the following constraint in your project source tree:
-    * sources files (C, S, ASM, S80): root directory or _src_ directory
-    * includes files (H, INC): root directory or _inc_ directory
-    * primary resource files (C, S, RC, RES): root directory or _res_ directory
-    * others resources files (TFC, TFD, PCM, RAW, WAV, BIN, BMP, PNG): can be wherever you want while you are referring them correctly in your resource definition files
-  1. Then to compile your project you need to use the following command directly from your project directory :
-```
+}}}
+ # Before compiling your own project you first need to respect the following constraint in your project source tree:
+  * sources files (C, S, ASM, S80): root directory or _src_ directory
+  * includes files (H, INC): root directory or _inc_ directory
+  * primary resource files (C, S, RC, RES): root directory or _res_ directory
+  * others resources files (TFC, TFD, PCM, RAW, WAV, BIN, BMP, PNG): can be wherever you want while you are referring them correctly in your resource definition files
+ # Then to compile your project you need to use the following command directly from your project directory :
+{{{
 %GDK_WIN%\bin\make -f %GDK_WIN%\makefile.gen
-```
+}}}
 
 
 Normally you should obtain a rom.bin file in the out directory.

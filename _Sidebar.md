@@ -1,17 +1,17 @@
 # Installation #
 
-  1. **[Installation & basic use](HowToUseSGDK.md)**
-  1. **[SGDK with Eclipse](UseSGDKWithEclipse.md)**
-  1. **[SGDK with Code::blocks](UseSGDKWithCB.md)**
+  1. **[Installation & basic use](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-basic)**
+  1. **[SGDK with Eclipse](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-with-Eclipse-%28old%29)**
+  1. **[SGDK with Code::blocks](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-with-CodeBlocks)**
   1. **[SGDK with QtCreator](https://github.com/AbigailBuccaneer/sgdk/wiki/sgdk-with-qtcreator)**
 
 # Programming #
 
-  1. **[Hello World example](HelloWorld.md)**
-  1. **[Input](Input.md)**
-  1. **[Tile and tilemap](Tiles.md)**
-  1. **[Sprites](Sprites.md)**
+  1. **[Hello World example](https://github.com/Stephane-D/SGDK/wiki/Tuto---Hello-World)**
+  1. **[Input](https://github.com/Stephane-D/SGDK/wiki/Tuto---Input)**
+  1. **[Tile and tilemap](https://github.com/Stephane-D/SGDK/wiki/Tuto---Background-%28old%29)**
+  1. **[Sprites](https://github.com/Stephane-D/SGDK/wiki/Tuto---Sprites-%28old%29)**
   1. **Misc**
-    1. **[SGDK and Maths](SGDK_Math.md)**
-    1. **[Quick intro to tile and tilemap](sgdk_tile_functions.md)**
+    1. **[SGDK and Maths](https://github.com/Stephane-D/SGDK/wiki/Tuto---Maths)**
+    1. **[Quick intro to tile and tilemap](https://github.com/Stephane-D/SGDK/wiki/Tuto---Tiles-methods-%28old%29)**
   1. **more to come soon...**

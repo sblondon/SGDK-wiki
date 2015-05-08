@@ -1,11 +1,7 @@
-**Here's how to use the devkit with Code::Blocks IDE**
-
-  * Define "GDK" environment variable to your installation path in unix path format (example D:/apps/gendev).
-
-  * Define "GDK\_WIN" which still point to your installation path but in windows format (exemple D:\apps\gendev).
-
+**Here's how to use SGDK within Code::Blocks IDE**
+  * Define "GDK" environment variable to your installation path in unix path format (example D:/apps/sgdk).
+  * Define "GDK\_WIN" which still point to your installation path but in windows format (exemple D:\apps\sgdk).
   * Download Code::Blocks and install it ( http://www.codeblocks.org/ )
-
   * Launch Code::Blocks and go to the Setting --> Compiler and debugger menu
 
 ![http://images4.hiboox.com/images/3312/d49cb27f03f5a9df1337362a0a8ff535.jpg](http://images4.hiboox.com/images/3312/d49cb27f03f5a9df1337362a0a8ff535.jpg)

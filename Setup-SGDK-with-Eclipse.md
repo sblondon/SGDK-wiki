@@ -10,9 +10,7 @@
 6. In _C/C++ > New CDT Project Wizard > Makefile Project_ go to the _Builder Settings_ tab
  * uncheck _**Use default build command**_
  * set _**Build command**_ value to `${GDK}/bin/make -f ${GDK}/makefile.gen`
-
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse03.png)
-
 7. In _C/C++ > New CDT Project Wizard > Makefile Project_ go to the _Behavior_ tab
  * check _**Build (incremental build)**_
  * replace field value `all` by `${ConfigName}` so it will use the current active configuration to build the project

@@ -1,5 +1,3 @@
-#summary Setup SGDK with Eclipse CDT
-
 *Here's how to use the devkit with Eclipse CDT IDE*
 
 == Setup your files ==

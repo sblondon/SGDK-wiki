@@ -1,7 +1,7 @@
 # Installation #
 
   1. **[Installation & basic use](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-basic)**
-  1. **[SGDK with Eclipse](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-with-Eclipse-%28old%29)**
+  1. **[SGDK with Eclipse](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-with-Eclipse)**
   1. **[SGDK with Code::blocks](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-with-CodeBlocks)**
   1. **[SGDK with QtCreator](https://github.com/AbigailBuccaneer/sgdk/wiki/sgdk-with-qtcreator)**
 

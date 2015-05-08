@@ -36,9 +36,6 @@
 4. Click _Apply_ and rebuild the index
 
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse06.png)
-{{{
-this will make available the headers on <parent folder>/sdk/include to your project
-}}}
 
 5. Right-click on the project and select _Build configurations > Manage..._
  * Rename the `Default` configuration to `release`
@@ -47,6 +44,5 @@ this will make available the headers on <parent folder>/sdk/include to your proj
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse07.png)
 
 ### Common error
-If you have an error on build like *`main() not found`*, be sure to click _*Apply*_ on project properties's _C/C++ General > Paths and Symbols_.
-
-Another source of problem : be sure to uncheck _Project > Build automatically_
+* If you have an error on build like *`main() not found`*, be sure to click _*Apply*_ on project properties's _C/C++ General > Paths and Symbols_.
+* Be sure to uncheck the _Project > Build automatically_ option.

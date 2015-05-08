@@ -5,10 +5,10 @@
 3. Launch Eclipse and set your workspace folder as your root folder of your futures development projects as each new project will be added to this folder by Eclipse.
 4. Go to the workbench and select menu _Window > Preferences_ to setup Eclipse
 5. In _General > Workspace_
- * select _**Save automatically before build**_
- * unselect _**Build automatically**_
+ * check _**Save automatically before build**_
+ * uncheck _**Build automatically**_
 6. In _C/C++ > New CDT Project Wizard > Makefile Project_ go to the _Builder Settings_ tab
- * unselect _**Use default build command**_
+ * uncheck _**Use default build command**_
  * set _Build command_ value to `${GDK}/bin/make -f ${GDK}/makefile.gen`
 
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse03.png)

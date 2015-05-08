@@ -2,7 +2,7 @@
 
 1. Define "GDK" environment variable to your installation path in unix path format (example D:/apps/sgdk).
 2. Download Eclipse CDT at http://www.eclipse.org/cdt/downloads.php and install it wherever you want.
-3. Launch Eclipse and set your workspace folder as your root folder of your futures development projects as each new project will be added to this folder by Eclipse.
+3. Launch Eclipse and set your workspace folder (will be your root folder for your futures projects).
 4. Go to the workbench and select menu _Window > Preferences_ to setup Eclipse
 5. In _General > Workspace_
  * check _**Save automatically before build**_
@@ -48,4 +48,4 @@ this will make available the headers on <parent folder>/sdk/include to your proj
 ### Common error
 If you have an error on build like *`main() not found`*, be sure to click _*Apply*_ on project properties's _C/C++ General > Paths and Symbols_.
 
-Another source of problem : be sure to un-mark _Project>Build automatically_
+Another source of problem : be sure to uncheck _Project > Build automatically_

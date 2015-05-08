@@ -14,7 +14,8 @@
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse03.png)
 
 7. In _C/C++ > New CDT Project Wizard > Makefile Project_ go to the _Behavior_ tab
- * be sure _**Build (incremental build)**_ is checked and replace field value `all` by `${ConfigName}` so it will use the current active configuration to build the project
+ * check _**Build (incremental build)**_
+ * replace field value `all` by `${ConfigName}` so it will use the current active configuration to build the project
 
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse02.png)
 

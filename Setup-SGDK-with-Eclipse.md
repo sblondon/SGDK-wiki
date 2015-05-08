@@ -29,8 +29,8 @@
 4. Click _Apply_ and rebuild the index
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse06.png)
 5. Right-click on the project and select _Build configurations > Manage..._
- * Rename the `Default` configuration to `release`
- * Add a new configuration named `debug`
+ * Rename the `Default` configuration to `Release`
+ * Add a new configuration named `Debug`
  * So now you can change the active configuration depending the build you need :)
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse07.png)
 

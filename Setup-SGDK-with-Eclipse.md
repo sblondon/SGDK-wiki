@@ -20,19 +20,19 @@
 
 1. You can now create a new project (_File > New > C Project > Makefile project > Empty Project > --Other toolchain--_).
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse04.png)
-2. Right-click on it and select _Properties_ to setup the project itself.
-3. In _C/C++ General > Paths and Symbols_, add a new directory in _Includes_ tab
- * Directory : `${GDK}/include`
- * Add to all configurations
- * Add to all languages
-![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse05.png)
-4. Click _Apply_ and rebuild the index
-![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse06.png)
-5. Right-click on the project and select _Build configurations > Manage..._
+2. Right-click on the project and select _Build configurations > Manage..._
  * Rename the `Default` configuration to `Release`
  * Add a new configuration named `Debug`
  * So now you can change the active configuration depending the build you need :)
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse07.png)
+3. Right-click on on the project and select _Properties_ to setup the project itself.
+4. In _C/C++ General > Paths and Symbols_, add a new directory in _Includes_ tab
+ * Directory : `${GDK}/inc`
+ * Add to all configurations
+ * Add to all languages
+![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse05.png)
+5. Click _Apply_ and rebuild the index
+![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse06.png)
 
 ### Common error
 * If you have an error on build like *`main() not found`*, be sure to click _*Apply*_ on project properties's _C/C++ General > Paths and Symbols_.

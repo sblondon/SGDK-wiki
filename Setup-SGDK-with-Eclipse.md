@@ -9,7 +9,7 @@
  * uncheck _**Build automatically**_
 6. In _C/C++ > New CDT Project Wizard > Makefile Project_ go to the _Builder Settings_ tab
  * uncheck _**Use default build command**_
- * set _Build command_ value to `${GDK}/bin/make -f ${GDK}/makefile.gen`
+ * set _**Build command**_ value to `${GDK}/bin/make -f ${GDK}/makefile.gen`
 
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse03.png)
 

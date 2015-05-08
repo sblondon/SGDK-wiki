@@ -14,27 +14,20 @@
 7. In _C/C++ > New CDT Project Wizard > Makefile Project_ go to the _Behavior_ tab
  * check _**Build (incremental build)**_
  * replace field value `all` by `${ConfigName}` so it will use the current active configuration to build the project
-
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse02.png)
 
 ### Setup Project
 
 1. You can now create a new project (_File > New > C Project > Makefile project > Empty Project > --Other toolchain--_).
-
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse04.png)
-
 2. Right-click on it and select _Properties_ to setup the project itself.
 3. In _C/C++ General > Paths and Symbols_, add a new directory in _Includes_ tab
  * Directory : `${GDK}/include`
  * Add to all configurations
  * Add to all languages
- 
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse05.png)
-
 4. Click _Apply_ and rebuild the index
-
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse06.png)
-
 5. Right-click on the project and select _Build configurations > Manage..._
  * Rename the `Default` configuration to `release`
  * Add a new configuration named `debug`

@@ -27,12 +27,12 @@
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse07.png)
 3. Right-click on on the project and select _Properties_ to setup the project itself.
 4. In _C/C++ General > Paths and Symbols_, add a new directory in _Includes_ tab
- * Directory : `${GDK}/inc`
- * Add to all configurations
- * Add to all languages
+ * Directory: `${GDK}/inc`
+ * Check `Add to all configurations`
+ * Check `Add to all languages`
+ * Validate by clicking OK
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse05.png)
-5. Click _Apply_ and rebuild the index
-![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse06.png)
+5. Click _Apply_ and rebuild the index if it asks for it.
 
 ### Common error
 * If you have an error on build like *`main() not found`*, be sure to click _*Apply*_ on project properties's _C/C++ General > Paths and Symbols_.

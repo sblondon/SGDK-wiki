@@ -14,6 +14,8 @@
 7. In _C/C++ > New CDT Project Wizard > Makefile Project_ go to the _Behavior_ tab
  * check _**Build (incremental build)**_
  * replace field value `all` by `${ConfigName}` so it will use the current active configuration to build the project
+ * check _**Clean**_
+ * replace field value `clean` by `clean${ConfigName}` so it will use custom clean depending the current active configuration
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse02.png)
 
 ### Setup Project

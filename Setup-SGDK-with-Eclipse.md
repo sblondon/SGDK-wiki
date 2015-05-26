@@ -34,8 +34,7 @@
  * Check `Add to all languages`
  * Validate by clicking OK
 ![](https://github.com/Stephane-D/SGDK/wiki/images/eclipse05.png)
-5. Click _Apply_ and rebuild the index if it asks for it.
-6. You're done and ready to compile your project !
+5. Click _Apply_ and rebuild the index if it asks for it and you're ready to compile your project :)
 
 ### Common error
 * If you have an error on build like *`main() not found`*, be sure to click _*Apply*_ on project properties's _C/C++ General > Paths and Symbols_.

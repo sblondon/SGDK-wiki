@@ -6,7 +6,7 @@ SGDK is splitted in severals part:
   * Library tools (resources compiler mainly). Binaries are provided only for Windows system only but sources are included so you can compile them easily.
 
 Download the complete archive in [Downloads Section](https://github.com/Stephane-D/SGDK/wiki/Download).<br>
-Unix/Linux users should give a try to the <a href='https://code.google.com/p/gendev/'>Gendev project</a> from Kubilis which allow to quickly setup SGDK on a Unix environment.<br>
+Unix/Linux users should give a try to the <a href='https://github.com/kubilus1/gendev/'>Gendev project</a> from Kubilis which allow to quickly setup SGDK on a Unix environment.<br>
 And now MACOS users also have access to SGDK with <a href='https://github.com/SONIC3D/gendev-macos'>Gendev MacOS</a>, thanks to Sonic3D for making it :)<br>
 
 After you downloaded the SGDK archive, check the <a href='https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-basic'>Wiki Section</a> to get installation instructions and basics tutorials.<br>

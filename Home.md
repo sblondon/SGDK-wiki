@@ -1,6 +1,6 @@
 ## SGDK : A small, open and free development kit for the Sega Megadrive ##
 
-SGDK is splitted in severals part:
+SGDK is split in several parts:
   * The library itself provided with full code sources, some samples and a Doxygen documentation (in the _doc_ folder).
   * GCC compiler binaries (for Windows system only as you can easily install them on Unix based system).
   * Library tools (resources compiler mainly). Binaries are provided only for Windows system only but sources are included so you can compile them easily.

@@ -206,7 +206,7 @@ The full use of linking is useful only on very special case (like the dragon bos
 
 So, for now, you should avoid problems and always link to next sprite and get back to sprite 0.
 
-Download : [Basic sprites project](http://sgdk.googlecode.com/svn/wiki/files/tut4_SpritesBasic.zip)
+Download : [Basic sprites project](files/tut4_SpritesBasic.zip)
 
 
 ---

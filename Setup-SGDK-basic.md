@@ -2,7 +2,7 @@ Installation and use of SGDK from command line (Windows OS only).
 
 1. Download the SGDK archive from the [Download page](https://github.com/Stephane-D/SGDK/wiki/Download) and unzip it where it suits to you (for instance D:/sgdk).
 2. Define _GDK_ environment variable to your installation path in unix path format (example D:/sgdk).
-3. Define _GDK_WIN_ which still point to your installation path but in windows format (exemple D:\sgdk).
+3. Define _GDK_WIN_ which still point to your installation path but in windows format (example D:\sgdk).
 4. Add the _bin_ directory of devkit (%GDK_WIN%\bin) to your PATH variable. Be careful, if you have another GCC installation you can have some conflicts when cc1 command will be called...
 5. Now you can compile the library by using
 <pre>%GDK_WIN%\bin\make -f %GDK_WIN%\makelib.gen</pre>

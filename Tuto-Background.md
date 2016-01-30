@@ -1,5 +1,3 @@
-## Tiles ##
-
 If you read documents linked on [first part](Tuto-Hello-World), you should know how to write more than 'Hello World' on screen :
   * the Genny redraws 2 planes on refresh (+ a third one for the sprites)
   * each plane is filled with 8x8 pixel tile

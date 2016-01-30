@@ -170,7 +170,7 @@ int main( )
 ```
 '></a>
 
-#### Misc ####
+### Misc ###
 
 Some others usefull functions are available:
   * `JOY_update()` refreshes joypad status (called every screen refresh so don't call it yourself unless you really need it)

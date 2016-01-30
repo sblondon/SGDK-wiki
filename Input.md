@@ -57,10 +57,10 @@ If you plan to support multiplayers, remember to use the correct joy IDs:
 Of course, you must be able to detect if there is a !TeamPlayer or a EAWay connected.
 
 There are actually 2 ways to know this:
-* through the port (PORT_1 or PORT_2) using JOY_isMultipad(port).
+* through the port (PORT_1 or PORT_2) using JOY_isMultipad(port).  
 This will return 0 if it"s not a multiplayer mode, JOY_SUPPORT_EA4WAY for an EA4Way and JOY_SUPPORT_TEAMPLAY for... a Sega TeamPlay
-* through the joypad itself using JOY_getJoyID(joy)
-This will return the ID of the joy:
+* through the joypad itself using JOY_getJoyID(joy)  
+This will return the ID of the joy:  
 If (ID & JOY_SUPPORT_EA4WAY), the joypad is connected to a EA4Way
 If (ID & JOY_SUPPORT_TEAMPLAY), the joypad is connected to a SegaTeam play
 

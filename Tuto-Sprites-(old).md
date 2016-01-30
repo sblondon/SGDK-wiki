@@ -1,6 +1,6 @@
 ## Sprites ##
 
-If you read documents linked on [first part](#Introduction.md), you should know the main difference between tiles for sprites and tiles for planes :
+If you read documents linked on [first part](#Tuto-background.md), you should know the main difference between tiles for sprites and tiles for planes :
   * the plane draws the tiles from left to right THEN top to bottom (ie row order)
   * the sprite draws the tiles from top to bottom THEN left to right (ie column order)
 

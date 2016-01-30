@@ -45,8 +45,7 @@ int main( )
 Download : [Basic input project](files/tut2_Input.zip)
 
 
-<a href='Hidden comment: 
-=== Multipad ===
+### Multipad ###
 
 This will work for up to 4 players using a [EA4Way](http://www.segaretro.org/4_Way_Play) and up to 8 players using 2 [Sega TeamPlayer](http://www.segaretro.org/Team_Player).
 

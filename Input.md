@@ -1,5 +1,3 @@
-## Input ##
-
 You'll now learn how to handle input from controllers
 
 The first thing to do is to call `JOY_init()`, this will reset the handler and read informations about the connected controllers.
@@ -52,21 +50,19 @@ Download : [Basic input project](files/tut2_Input.zip)
 
 This will work for up to 4 players using a [EA4Way](http://www.segaretro.org/4_Way_Play) and up to 8 players using 2 [Sega TeamPlayer](http://www.segaretro.org/Team_Player).
 
-If you plan to support multiplayers, remember to use the correct joy IDs : JOY_1/JOY_1A, JOY_1B, JOY_1C, JOY_1D, JOY2/JOY_2A, JOY_2B, JOY_2C, JOY_2D.
+If you plan to support multiplayers, remember to use the correct joy IDs:
+* JOY_1/JOY_1A, JOY_1B, JOY_1C, JOY_1D for first port
+* JOY_2/JOY_2A, JOY_2B, JOY_2C, JOY_2D for second port.
 
 Of course, you must be able to detect if there is a !TeamPlayer or a EAWay connected.
 
 There are actually 2 ways to know this:
-* throught the port (PORT_1 or PORT_2) using JOY_isMultipad( port ).
-```
+* through the port (PORT_1 or PORT_2) using JOY_isMultipad(port).
 This will return 0 if it"s not a multiplayer mode, JOY_SUPPORT_EA4WAY for an EA4Way and JOY_SUPPORT_TEAMPLAY for... a Sega TeamPlay
-```
-* throught the joypad itself using JOY_getJoyID( joy )
-```
-This will return the ID of the joy.
+* through the joypad itself using JOY_getJoyID(joy)
+This will return the ID of the joy:
 If (ID & JOY_SUPPORT_EA4WAY), the joypad is connected to a EA4Way
 If (ID & JOY_SUPPORT_TEAMPLAY), the joypad is connected to a SegaTeam play
-```
 
 
 Ex:

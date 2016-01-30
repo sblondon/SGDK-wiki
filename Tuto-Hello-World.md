@@ -1,6 +1,6 @@
 ## Hello World ##
 
-Whenever you use [Code::Block](Setup-SGDK-with-CodeBlocks), [Eclipse](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-with-Eclipse.md), [QtCreator](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-with-QtCreator.md) or [any other source code editor](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-basic.md), you need your `main` function.
+Whenever you use [Code::Block](Setup-SGDK-with-CodeBlocks), [Eclipse](Setup-SGDK-with-Eclipse), [QtCreator](Setup-SGDK-with-QtCreator) or [any other source code editor](Setup-SGDK-basic), you need your `main` function.
 
 ```
 int main( )
@@ -100,4 +100,4 @@ int main()
 ```
 Congratulations! You're now ready to make a little more!
 
-Download : [Sample Hello World project](https://github.com/Stephane-D/SGDK/wiki/files/tut1_HelloWorld.zip)
+Download : [Sample Hello World project](files/tut1_HelloWorld.zip)

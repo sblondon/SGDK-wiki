@@ -149,6 +149,7 @@ We'll try now to draw this moon on screen
 
 ![moon](images/tutTile-blue-moon.jpg)
 
+
 2 important things to check before to continue
   1. the bitmap size should be 8 pixel aligned (ie : 64x32 is good where 67x31 isn't)
   1. the bitmap should be 4bpp or 8bpp and respect megadrive color constraints (16 colors per tile and no more than 64 colors at max)...
@@ -202,7 +203,7 @@ This function draw FROM the tile index in argument to the last needed to fill th
 ```
 
 
-Download : [Bitmap tiles project](https://github.com/Stephane-D/SGDK/wiki/files/tut3_TilesBitmap.zip)
+Download : [Bitmap tiles project](files/tut3_TilesBitmap.zip)
 
 
 ### Compression ###
@@ -218,4 +219,4 @@ One useful way to test your tile engine is through [Gens KMod](http://gendev.spr
 
 You could explore the VRAM and trace any issue.
 
-![https://github.com/Stephane-D/SGDK/wiki/pictures/tutTile_Kmod.jpg](https://github.com/Stephane-D/SGDK/wiki/pictures/tutTile_Kmod.jpg)
+![Gens KMod](images/tutTile_Kmod.jpg)

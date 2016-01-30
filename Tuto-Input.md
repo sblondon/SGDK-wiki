@@ -44,13 +44,13 @@ int main( )
 }
 ```
 
-Download : [Basic input project](http://sgdk.googlecode.com/svn/wiki/files/tut2_Input.zip)
+Download : [Basic input project](files/tut2_Input.zip)
 
 
 <a href='Hidden comment: 
 === Multipad ===
 
-This will work for up to 4 players using a [http://www.segaretro.org/4_Way_Play EA4Way] and up to 8 players using 2 [http://www.segaretro.org/Team_Player Sega TeamPlayer].
+This will work for up to 4 players using a [EA4Way](http://www.segaretro.org/4_Way_Play) and up to 8 players using 2 [Sega TeamPlayer](http://www.segaretro.org/Team_Player).
 
 If you plan to support multiplayers, remember to use the correct joy IDs : JOY_1/JOY_1A, JOY_1B, JOY_1C, JOY_1D, JOY2/JOY_2A, JOY_2B, JOY_2C, JOY_2D.
 

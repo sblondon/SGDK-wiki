@@ -140,6 +140,7 @@ Similary, the signature of your callback function must be void myMouseHandler( u
 Ex:
 ```
 s16 mouseX=0, mouseY=0;
+
 void myMouseHandler( u16 joy, s8 xDelta, s8 yDelta, u16 buttonState)
 {
 	char str[4];
@@ -155,6 +156,7 @@ void myMouseHandler( u16 joy, s8 xDelta, s8 yDelta, u16 buttonState)
 		if (mouseY<0)	mouseY = 0;
 	}
 }
+
 int main( )
 {
 	JOY_init();
@@ -168,7 +170,6 @@ int main( )
 	return 0;
 }
 ```
-'></a>
 
 ### Misc ###
 

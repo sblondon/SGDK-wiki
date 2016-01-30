@@ -1,6 +1,6 @@
 ## Tiles ##
 
-If you read documents linked on [first part](#Tuto-Hello-World.md), you should know how to write more than 'Hello World' on screen :
+If you read documents linked on [first part](Tuto-Hello-World), you should know how to write more than 'Hello World' on screen :
   * the Genny redraws 2 planes on refresh (+ a third one for the sprites)
   * each plane is filled with 8x8 pixel tile
   * each plane could be 32x32 to 128x128 tiles in memory (only up to 40x28 is visible on screen)
@@ -27,8 +27,7 @@ So, the steps to draw a tile on screen are the following
 
 But first, we need a tile !
 
-Rescomp and others tools made by the community ([Genitile](http://www.pascalorama.com/article.php?news=28&cat=21), [B2T](http://gendev.spritesmind.net/page-b2t.html), [GenRes](http://gendev.spritesmind.net/page-genres.html), [Mega-Happy-Sprite](http://uberleethackerforce.deepgeek.us/prods.html)
-...) let you convert a 16 color bitmap in Genny's tile and pal.
+Rescomp and others tools made by the community ([Genitile](http://www.pascalorama.com/article.php?news=28&cat=21), [B2T](http://gendev.spritesmind.net/page-b2t.html), [GenRes](http://gendev.spritesmind.net/page-genres.html), Mega-Happy-Sprite...) let you convert a 16 color bitmap in Genny's tile and pal.
 
 But, to learn, we'll first make it the hard way : pure C Array !
 
@@ -148,7 +147,7 @@ It will be hard to make a game using one and unique tile.
 
 We'll try now to draw this moon on screen
 
-![images/tutTile-blue-moon.jpg]
+![images/tutTile-blue-moon.jpg](images/tutTile-blue-moon.jpg)
 
 2 important things to check before to continue
   1. the bitmap size should be 8 pixel aligned (ie : 64x32 is good where 67x31 isn't)

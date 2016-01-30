@@ -139,7 +139,7 @@ Very boring but, hopefully, SGDK came to the rescue with `VDP_fillTileMapRect`.
 ```
 
 
-Download : [Basic tiles project](http://sgdk.googlecode.com/svn/wiki/files/tut3_TilesBasic.zip)
+Download : [Basic tiles project](https://github.com/Stephane-D/SGDK/wiki/files/tut3_TilesBasic.zip)
 
 
 ### Multi tile ###
@@ -148,7 +148,7 @@ It will be hard to make a game using one and unique tile.
 
 We'll try now to draw this moon on screen
 
-![http://sgdk.googlecode.com/svn/wiki/pictures/tutTile-blue-moon.jpg](http://sgdk.googlecode.com/svn/wiki/pictures/tutTile-blue-moon.jpg)
+![https://github.com/Stephane-D/SGDK/wiki/images/tutTile-blue-moon.jpg](https://github.com/Stephane-D/SGDK/wiki/images/tutTile-blue-moon.jpg)
 
 2 important things to check before to continue
   1. the bitmap size should be 8 pixel aligned (ie : 64x32 is good where 67x31 isn't)
@@ -203,7 +203,7 @@ This function draw FROM the tile index in argument to the last needed to fill th
 ```
 
 
-Download : [Bitmap tiles project](http://sgdk.googlecode.com/svn/wiki/files/tut3_TilesBitmap.zip)
+Download : [Bitmap tiles project](https://github.com/Stephane-D/SGDK/wiki/files/tut3_TilesBitmap.zip)
 
 
 ### Compression ###
@@ -219,4 +219,4 @@ One useful way to test your tile engine is through [Gens KMod](http://gendev.spr
 
 You could explore the VRAM and trace any issue.
 
-![http://sgdk.googlecode.com/svn/wiki/pictures/tutTile_Kmod.jpg](http://sgdk.googlecode.com/svn/wiki/pictures/tutTile_Kmod.jpg)
+![https://github.com/Stephane-D/SGDK/wiki/pictures/tutTile_Kmod.jpg](https://github.com/Stephane-D/SGDK/wiki/pictures/tutTile_Kmod.jpg)

@@ -160,7 +160,7 @@ SGDK is able to handle many type of resources file (PNG file are also accepted),
 
 `name_of_res_file.h` contains the resource declarations and let you access, for instance, your bitmap image as a Bitmap data structure.
 
-so, including `name_of_bmp_file.h`, you could load the bitmap on VRAM this way
+so, including `name_of_bmp_file.h`, you could load the bitmap on VRAM this way.
 
 ```
 #include "moon.h"
@@ -175,7 +175,6 @@ int main( )
 	// get the palette data of moon
 	VDP_setPalette(PAL1, moon.palette->data);
 
-	
 	// load bitmap data of moon in VRAM
 	// w/8 = width in tiles we want to load
 	// h/8 = height in tile we want to load
@@ -183,11 +182,11 @@ int main( )
 	// the 3rd arg is needed because you could load only a part of the bitmap if you want but SGDK needs the width as reference
 	VDP_loadBMPTileData(moon.image, 1, w / 8, h / 8, w/8 );
 
-
 	while(1)
 	{
 		VDP_waitVSync();
 	}
+
 	return 0;
 }
 ```
@@ -206,94 +205,17 @@ This function draw FROM the tile index in argument to the last needed to fill th
 
 Download : [Bitmap tiles project](http://sgdk.googlecode.com/svn/wiki/files/tut3_TilesBitmap.zip)
 
-### GenRes's BITMAP support ###
-
-SGDK comes with another way to load tiles: using _**GenRes**_.
-
-GenRes is a tool which, actually, converts bitmap, animation & map for Genny development.
-
-For this part of the tutorial, we will only talk about the `BITMAP` mode.
-
-GenRes relies on a resource declaration file where each line defines the convert mode, the output name, the file and some parameters.
-
-In your case, you will use the `BITMAP` convert mode this way :
-
-```
-	BITMAP output_var_name "directory/file.bmp" 0
-	; always finish with a blank line or comment
-```
-
-If you write it down in a `resource.rc`, SGDK will call GenRes to compile `directory/file.bmp` to a linked `resource.o`.
-
-For version up to 0.7d, GenRes output format is undefined in SGDK, so you have to write your own format structure like this :
-
-```
-	struct genresTiles
-	{
-			u16 *pal; 		//pointer to pal data
-			u32 *tiles;		//pointer to tiles data
-			u16 width;		//width in tiles
-			u16 height;		//height in tiles
-			u16 compressedSize; //0
-	};
-```
-
-Unlike SGDK's native bitmap support, it doesn't generate a header file but you could access the data using your `output_var_name`.
-```
-	extern struct genresTiles output_var_name;
-```
-
-
-`VDP_loadBMPTileData` is dedicated to BMP. Since GenRes converts a bitmap to tiles data, you need to use another VDP function, dedicated to tiles : `VDP_loadTileData`.
-
-```
-	// .... code
-	
-	// load tiles in VRAM
-	//  arg0 = tiles data
-	//  arg1 = index for first destination tile
-	//  arg2 = number of tiles to load
-	//  arg3 = use DMA (1) or not (0)
-	VDP_loadTileData(moon.tiles, TILE1, moon.width*moon.height, 0);
-
-	// .... code
-
-```
-
-For pal loading and drawing, you still need `VDP_setPalette` and `VDP_fillTileMapRectInc`.
-
-And so, you could draw the moon this way :
-
-```
-	// .... code
-
-	VDP_setPalette(PAL1, moon.pal);
-	VDP_loadTileData(moon.tiles, TILE1, moon.width*moon.height, 0);
-	VDP_fillTileMapRectInc(BPLAN, TILE_ATTR_FULL(PAL1, 0, 0, 0, TILE1), 12, 12, moon.width, moon.height);
-
-	// .... code
-```
-
-
-To the question _"SGDK native bitmap support or GenRes ?"_, it's only a matter of personal taste and not the goal of this tutorial.
-
-
-Download : [Genres tiles project](http://sgdk.googlecode.com/svn/wiki/files/tut3_TilesGenRes.zip)
-
 
 ### Compression ###
 
 If you use a large amount of tiles, we strongly suggest you to compress them (using RLE, huffman, ...).
 
-SGDK doesn't include (yet?) a method to load compressed bitmap data so it's up to you to make your own (de)compression algorithm.
+Compression is defined at resource declaration level, the last parameter of IMAGE resource allow you to define which type of compression to use (see rescomp.txt file for more details).
 
-GenRes BITMAP could use a RLE-based compression. _more details soon_
-
-Check if the tool you use could export compressed data too.
 
 ### Misc ###
 
-One useful way to test your tile engine is throught [Gens KMod](http://gendev.spritesmind.net/page-gensK.html).
+One useful way to test your tile engine is through [Gens KMod](http://gendev.spritesmind.net/page-gensK.html).
 
 You could explore the VRAM and trace any issue.
 

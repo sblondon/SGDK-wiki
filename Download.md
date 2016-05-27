@@ -67,7 +67,7 @@ Get the last version: [SGDK 1.2](https://www.dropbox.com/s/ee3159mtbyo8mlt/sgdk1
   * MATHS
     * added `abs(..)` method.
     * fixed `fix32ToRoundedInt()` and `fix32Round()` defines (added parenthesis around)
-    * replaced `distance_approx(..)` by getApproximatedDistance(..)`
+    * replaced `distance_approx(..)` by `getApproximatedDistance(..)`
     * changed fix32 div/mul calculation strategy for better value preservation
   * MEMORY
     * added `MEM_getAllocated()` to return current dynamically allocated memory.
@@ -202,7 +202,7 @@ Get the last version: [SGDK 1.2](https://www.dropbox.com/s/ee3159mtbyo8mlt/sgdk1
 ## Changelog 1.00 ##
 
 A big addition for SGDK 1.00, the new XGM sound driver !
-You can find more informations about it in the [XGM driver specifications](https://drive.google.com/file/d/0BztTfEamf-d9MjVsOGN1MXEwdk0/view?usp=sharing).
+You can find more informations about it in the [XGM driver specifications](https://www.dropbox.com/s/bu348hu29ttl6la/xgm.txt?dl=0).
 
 **COMPILER**
   * Rescomp

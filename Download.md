@@ -1,8 +1,9 @@
 ## Download ##
 
-Get the last version: [SGDK 1.12](https://www.dropbox.com/s/2cnlpcoiowq6178/sgdk112.7z?dl=0)
+Get the last version: [SGDK 1.2](https://www.dropbox.com/s/ee3159mtbyo8mlt/sgdk12.7z?dl=0)
 
 **Old versions**
+  * [SGDK 1.12](https://www.dropbox.com/s/2cnlpcoiowq6178/sgdk112.7z?dl=0)
   * [SGDK 1.11](https://www.dropbox.com/s/fk51tsowolmjwaf/sgdk111.7z?dl=0)
   * [SGDK 1.10](https://www.dropbox.com/s/ng7ga5reyay51p6/sgdk110.7z?dl=0)
   * [SGDK 1.01](https://www.dropbox.com/s/059zcf44176r9z9/sgdk101.7z?dl=0)
@@ -11,6 +12,130 @@ Get the last version: [SGDK 1.12](https://www.dropbox.com/s/2cnlpcoiowq6178/sgdk
 
 
 ---
+
+## Changelog 1.2 ##
+
+**DOCUMENTATION**
+  * several update and fixes here and there (some tags were not correctly recognized in later doxygen version).
+
+**COMPILER**
+  * Rescomp: updated to version 1.5 (with updated documentation)
+    * updated SPRITE resource compilation to the new SGDK Sprite structures.
+    * fixed minor issue on IMAGE resource packing.
+    * now using constants for sound driver (less confusing, got annoying bug because of that).
+    * changed header _define_ name generation to avoid conflict between 2 identical named file.
+    * fixed a bug in tilemap optimization for flipped tiles.
+    * removed all packers not anymore used in SGDK.
+    * minor change to XGM resource to support extra parameter
+    * fixed a minor bug in sprite structure definition
+  * XGMTool: updated to version 1.64
+    * major structure changes for faster conversion/optimization operations
+    * improved VGM to XGM conversion.
+    * added options to disable some PCM auto processing
+    * new options available to handle specific case and improve conversion process
+    * added GD3 tag support.
+    * better handling of PAL/NTSC timing
+    * fixed pal information lost during XGC conversion.
+    * more accurate loop position
+    * fixed a minor issue in offset calculation.
+    * fixed VGM loop information export (when using VGM optimization)
+  * WavToRaw
+    * fix 64-bit issues, it is still not endian safe.
+    * check for read errors.
+  * Appack: minor fix for silent parameter.
+  * Added new custom LZ4W packer (require Java to be installed).
+  * Removed GenRes tool (not anymore used and can confuse with rescomp).
+  * added GDB tool (not yet really used yet)
+  * Separated _debug_ and _release_ library build for easier profile switch.
+
+**LIBRARY**
+  * BITMAP
+    * allow to change the plan used for bitmap rendering
+    * added buffer preservation option (severe impact on performance)
+    * fixed minors issues on reset/initialization process
+  * DMA: added new DMA queue system in _dma_ unit, you can consider _vdp\_dma_ unit as deprecated (still provided for backward compatibility).
+    * we can now limit the max transfer capabilities in a single frame with `DMA_setMaxTransferSize(..)`
+    * can now define the DMA queue size with DMA_init(..) method.
+    * added `DMA_setIgnoreOverCapacity(..)` to change DMA strategy when reaching max capacity.
+  * GRAPHIC
+    * added news methods for allocation and compression stuff (see TOOLS section)
+    * added dynamic VRAM allocation (_vram_ unit which replace _tilecache_ unit)
+  * PALETTE
+    * fixed `RGB24_TO_VDPCOLOR` so it does what it says.
+    * better palette fading using rounding.
+    * fixed issue using sync fading locking interrupts (can cause XGM music lag).
+  * MATHS
+    * added `abs(..)` method.
+    * fixed `fix32ToRoundedInt()` and `fix32Round()` defines (added parenthesis around)
+    * replaced `distance_approx(..)` by getApproximatedDistance(..)`
+    * changed fix32 div/mul calculation strategy for better value preservation
+  * MEMORY
+    * added `MEM_getAllocated()` to return current dynamically allocated memory.
+    * added `MEM_dump()` to dump in Gend KMod console the memory allocation table
+  * SOUND
+    * renamed `Z80_DRIVER_4PCM_ENV` --> `Z80_DRIVER_4PCM`
+  * SPRITE: complete rewrite of sprite engine !
+    * many changes including the API.
+    * should be faster but will be more optimized in future.
+  * STRING
+    * added isdigit(c), strnlen(..) and the very useful sprintf(..) ma
+    * added strncpy(..) method.
+    * replaced strreplace(..) --> strreplacechar(..)
+    * fixed fix32ToStr(..) and fix16ToStr(..) methods
+  * SYSTEM
+    * tried to more more compatible with default GCC stdint.h definitions
+    * added `SYS_setVIntPreCallback(..)` so you can have your method called at VInt before any internal SGDK stuff are proceed.
+    * added `SYS_isNTSC()` and `SYS_isPAL()` methods for easy system determination.
+    * minor fix on SP register initialization (preserve value set in vector table)
+    * added `SYS_hardReset()` to force hard reset.
+  * TOOLS:
+    * added new `LZ4W` compression (very fast unpacking but average compression level)
+    * removed `RLE`, `RLE_MAP` and `UFTC` compression (LZ4W performs better in almost all cases).
+    * removed `UnpackEx(..)` method (useless now).
+    * added `setRandomSeed(u16 seed)` to initialize randomizer.
+  * VDP
+    * renamed `WPLAN` / `WINDOW` / `VDP_WINDOW` --> `VDP_PLAN_WINDOW`
+    * renamed `APLAN` --> `VDP_PLAN_A`
+    * renamed `BPLAN` --> `VDP_PLAN_B`
+    * renamed `SLIST` / `VDP_SPRITE_LIST` --> `VDP_SPRITE_TABLE`
+    * renamed `HSCRL` / `VDP_SCROLL_H` --> `VDP_HSCROLL_TABLE`
+    * added `planWidth` / `planHeight` to replace VDP_getPlanWidth() / VDP_getPlanHeigth() for faster internal SGDK calculations.
+    * added `windowWidth` / `windowHeight` for faster internal SGDK calculations.
+    * added `VDP_setWindowHPos(..)` and `VDP_setWindowVPos(..)` methods to set window positions.
+    * fixed a bug with `VDP_setBPlanAddress(..)` method.
+  * VDP BG/TILE
+    * replaced `VDP_PLAN_A` / `VDP_PLAN_B` constants by `PLAN_A` / `PLAN_B` in some methods.
+    * some methods now support `PLAN_WINDOW` parameter.
+    * added `VDP_clearTextAreaBG(..)`, `VDP_clearTextLineBG(..)`, `VDP_clearTextArea(..)` methods.
+    * modified `VDP_drawTextBG(..)` method.
+    * others minors changes.
+  * VDP SPRITE: major rewrite of _vdp\_sprite_ unit (require project modifications) !
+    * replaced `SpriteDef` structure by `VDPSprite` structure (fit better hardware structure).
+    * added dynamic allocation of hardware sprite: `VDP_allocateSprites(..)`, `VDP_releaseSprites(..)`, `VDP_getAvailableSprites()`
+    * `VDP_updateSprites(..)` can now use DMA queue.
+    * many others changes.
+  * XGM driver
+    * better handling of main BUS contention with DMA
+    * added methods to improve BUS contention when using PSG sound in music.
+    * fixed PCM play status when PCM is used from XGM music.
+    * minor fix in driver code for better music frame sync.
+    * better pause/resume support.
+    * music sync is now handled on 68000 side for more flexibility (adjustable tempo).
+  * Z80
+    * modified writeYM macros
+* memory usage optimizations.
+
+**SAMPLE**
+  * Bench
+    * added new sample for general test and benchmarking.
+  * Sound
+    * minors changes about Z80 load information for XGM driver.
+  * Sprite
+    * added basic enemies (no collision yet)
+    * added basic SFX
+    * updated to last SGDK
+    * some refactoring
+
 
 
 ## Changelog 1.12 ##

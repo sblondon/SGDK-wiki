@@ -15,9 +15,6 @@ Get the last version: [SGDK 1.2](https://www.dropbox.com/s/ee3159mtbyo8mlt/sgdk1
 
 ## Changelog 1.2 ##
 
-**DOCUMENTATION**
-  * several update and fixes here and there (some tags were not correctly recognized in later doxygen version).
-
 **COMPILER**
   * Rescomp: updated to version 1.5 (with updated documentation)
     * updated SPRITE resource compilation to the new SGDK Sprite structures.
@@ -73,14 +70,14 @@ Get the last version: [SGDK 1.2](https://www.dropbox.com/s/ee3159mtbyo8mlt/sgdk1
     * added `MEM_getAllocated()` to return current dynamically allocated memory.
     * added `MEM_dump()` to dump in Gend KMod console the memory allocation table
   * SOUND
-    * renamed `Z80_DRIVER_4PCM_ENV` --> `Z80_DRIVER_4PCM`
+    * renamed `Z80_DRIVER_4PCM_ENV` to `Z80_DRIVER_4PCM`
   * SPRITE: complete rewrite of sprite engine !
     * many changes including the API.
     * should be faster but will be more optimized in future.
   * STRING
     * added isdigit(c), strnlen(..) and the very useful sprintf(..) ma
     * added strncpy(..) method.
-    * replaced strreplace(..) --> strreplacechar(..)
+    * replaced strreplace(..) by strreplacechar(..)
     * fixed fix32ToStr(..) and fix16ToStr(..) methods
   * SYSTEM
     * tried to more more compatible with default GCC stdint.h definitions
@@ -94,11 +91,11 @@ Get the last version: [SGDK 1.2](https://www.dropbox.com/s/ee3159mtbyo8mlt/sgdk1
     * removed `UnpackEx(..)` method (useless now).
     * added `setRandomSeed(u16 seed)` to initialize randomizer.
   * VDP
-    * renamed `WPLAN` / `WINDOW` / `VDP_WINDOW` --> `VDP_PLAN_WINDOW`
-    * renamed `APLAN` --> `VDP_PLAN_A`
-    * renamed `BPLAN` --> `VDP_PLAN_B`
-    * renamed `SLIST` / `VDP_SPRITE_LIST` --> `VDP_SPRITE_TABLE`
-    * renamed `HSCRL` / `VDP_SCROLL_H` --> `VDP_HSCROLL_TABLE`
+    * renamed `WPLAN` / `WINDOW` / `VDP_WINDOW` to `VDP_PLAN_WINDOW`
+    * renamed `APLAN` to `VDP_PLAN_A`
+    * renamed `BPLAN` to `VDP_PLAN_B`
+    * renamed `SLIST` / `VDP_SPRITE_LIST` to `VDP_SPRITE_TABLE`
+    * renamed `HSCRL` / `VDP_SCROLL_H` to `VDP_HSCROLL_TABLE`
     * added `planWidth` / `planHeight` to replace VDP_getPlanWidth() / VDP_getPlanHeigth() for faster internal SGDK calculations.
     * added `windowWidth` / `windowHeight` for faster internal SGDK calculations.
     * added `VDP_setWindowHPos(..)` and `VDP_setWindowVPos(..)` methods to set window positions.
@@ -135,6 +132,9 @@ Get the last version: [SGDK 1.2](https://www.dropbox.com/s/ee3159mtbyo8mlt/sgdk1
     * added basic SFX
     * updated to last SGDK
     * some refactoring
+
+**DOCUMENTATION**
+  * several update and fixes here and there (some tags were not correctly recognized in later doxygen version).
 
 
 

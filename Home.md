@@ -1,11 +1,11 @@
 ## SGDK : A small, open and free development kit for the Sega Megadrive ##
 
-SGDK 1.2  released !
-
-It features a new Sprite Engine which is still not yet completed (i plan to optimize performance which are already better than the old Sprite Engine but not fast enough yet and also plan to add sorting feature...).
-You might find some bugs in it as the code becomes complex and i could not test it intensively, please report them in the GitHub issues tracker :)<
-If you experience `undefined reference to _hard_reset` error then just delete your local project copy of `boot/sega.s` file so it will automatically replaced by the new SGDK one.
-
+SGDK 1.2 has been released !<br>
+<br>
+It features a new Sprite Engine which is still not yet completed (i plan to optimize performance which are already better than the old Sprite Engine but not fast enough yet and also plan to add sorting feature...)<br>
+You might find some bugs in it as the code becomes complex and i could not test it intensively, please report them in the GitHub issues tracker :)<br>
+If you experience `undefined reference to _hard_reset` error then just delete your local project copy of `boot/sega.s` file so it will automatically replaced by the new SGDK one.<br>
+<br>
 SGDK is split in several parts:
   * The library itself provided with full code sources, some samples and a Doxygen documentation (in the _doc_ folder).
   * GCC compiler binaries (for Windows system only as you can easily install them on Unix based system).

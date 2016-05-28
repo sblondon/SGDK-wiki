@@ -8,7 +8,7 @@ If you experience `undefined reference to _hard_reset` error then just delete yo
 SGDK is split in several parts:
   * The library itself provided with full code sources, some samples and a Doxygen documentation (in the _doc_ folder).
   * GCC compiler binaries (for Windows system only as you can easily install them on Unix based system).
-  * Library tools (resources compiler mainly). Binaries are provided only for Windows system only but sources are included so you can compile them easily.
+  * Library tools (resources compiler mainly). Binaries are provided only for Windows system only but sources are included so you can compile them easily, note that some tools requires Java to be installed.
 
 Download the complete archive in [Download Section](https://github.com/Stephane-D/SGDK/wiki/Download).<br>
 Unix/Linux users should give a try to the <a href='https://github.com/kubilus1/gendev/'>Gendev project</a> from Kubilis which allow to quickly setup SGDK on a Unix environment.<br>

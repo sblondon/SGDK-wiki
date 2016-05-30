@@ -1,8 +1,9 @@
 ## Download ##
 
-Get the last version: [SGDK 1.2](https://www.dropbox.com/s/ee3159mtbyo8mlt/sgdk12.7z?dl=0)
+Get the last version: [SGDK 1.21](https://www.dropbox.com/s/8ocwkgttf6vbku7/sgdk121.7z?dl=0)
 
 **Old versions**
+  * [SGDK 1.2](https://www.dropbox.com/s/ee3159mtbyo8mlt/sgdk12.7z?dl=0)
   * [SGDK 1.12](https://www.dropbox.com/s/2cnlpcoiowq6178/sgdk112.7z?dl=0)
   * [SGDK 1.11](https://www.dropbox.com/s/fk51tsowolmjwaf/sgdk111.7z?dl=0)
   * [SGDK 1.10](https://www.dropbox.com/s/ng7ga5reyay51p6/sgdk110.7z?dl=0)
@@ -13,7 +14,19 @@ Get the last version: [SGDK 1.2](https://www.dropbox.com/s/ee3159mtbyo8mlt/sgdk1
 
 ---
 
-## Changelog 1.2 ##
+## Changelog 1.21 (May 2016) ##
+
+**LIBRARY**
+  * SPRITE: fixed a bug causing corrupted sprite after SPR_release(..) operation
+  * TOOLS: reintroduced zlib_unpack(..) method (accidentally removed from header)
+
+**SAMPLE**
+  * Bench
+    * fixed a bug causing address error on real hardware during 'Sprite test'.
+    * added 2 tests in 'BG test'
+
+
+## Changelog 1.2 (May 2016) ##
 
 **COMPILER**
   * Rescomp: updated to version 1.5 (with updated documentation)
@@ -138,7 +151,7 @@ Get the last version: [SGDK 1.2](https://www.dropbox.com/s/ee3159mtbyo8mlt/sgdk1
 
 
 
-## Changelog 1.12 ##
+## Changelog 1.12 (March 2015) ##
 
 **COMPILER**
   * XGMTool

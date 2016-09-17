@@ -44,7 +44,7 @@ int main()
 
 This code is correct but not Genesis friendly : do you think we can return (and stop) a program ?
 
-Video games repeatly update the TV screen, and it's up to you to handle things before or while a refresh.
+Video games repeatedly update the TV screen, and it's up to you to handle things before or while a refresh.
 
 So a more Genny Hello World is more like this :
 ```
@@ -71,7 +71,7 @@ The code inside the while loop will execute in full speed...great! but do you th
 
 The TV screen is updated 50 (PAL) or 60 (NTSC) times per second...you have to be sync with this.
 
-An usefull way is to wait for screen update, or vertical synchronisation.
+A useful way is to wait for screen update, or vertical synchronisation.
 
 SGDK is here to help you with the `VDP_waitVSync` func.
 

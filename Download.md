@@ -15,6 +15,12 @@ Get the last version: [SGDK 1.22](https://www.dropbox.com/s/wcv0noc91wd22ve/sgdk
 
 ---
 
+## Changelog 1.22a (September 2016) ##
+
+**LIBRARY**
+  * VDP: reintroduced the 16 plain system tiles.
+
+
 ## Changelog 1.22 (September 2016) ##
 
 **DOCUMENTATION**

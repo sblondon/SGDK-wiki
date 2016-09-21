@@ -1,8 +1,9 @@
 ## Download ##
 
-Get the last version: [SGDK 1.21](https://www.dropbox.com/s/8ocwkgttf6vbku7/sgdk121.7z?dl=0)
+Get the last version: [SGDK 1.22](https://www.dropbox.com/s/wcv0noc91wd22ve/sgdk122.7z?dl=0)
 
 **Old versions**
+  * [SGDK 1.21](https://www.dropbox.com/s/8ocwkgttf6vbku7/sgdk121.7z?dl=0)
   * [SGDK 1.2](https://www.dropbox.com/s/ee3159mtbyo8mlt/sgdk12.7z?dl=0)
   * [SGDK 1.12](https://www.dropbox.com/s/2cnlpcoiowq6178/sgdk112.7z?dl=0)
   * [SGDK 1.11](https://www.dropbox.com/s/fk51tsowolmjwaf/sgdk111.7z?dl=0)
@@ -14,16 +15,54 @@ Get the last version: [SGDK 1.21](https://www.dropbox.com/s/8ocwkgttf6vbku7/sgdk
 
 ---
 
+## Changelog 1.22 (September 2016) ##
+
+**DOCUMENTATION**
+  * minors improvements and fixes
+
+**COMPILER**
+  * Rescomp: fixed a minor issue in sprite resource
+  * XGMTool:
+    * added duration information to XD3 tag
+    * improved loop
+  * added the XGM ROM builder tool.
+  * removed GenRes from makefile
+
+**LIBRARY**
+  * Sprite Engine:
+    * fixed sprite attribut update for non visible sprite
+    * fixed sprite list update in certain condition
+  * Sound:
+    * moved XGM driver method in a specific unit (xgm.c)
+    * added `XGM_getElapsed(..)` method to retrieve elapsed XGM music playing time (in number of frame)
+    * added `XGM_setLoopNumber(..)` to set the wanted number of loop in XGM music play.
+    * added interrupt protection for Z80 access
+  * Maths:
+    * reverted `fix32Mul()` and `fix32Div()` to previous version to avoid cumulative error
+    * added `getApproximatedLog2(..)` method for fast Log2 calculation (approximated)
+    * added `getLog2Int(..)` method for integer Log2 calculation
+  * Misc:
+    * moved QSort methods to tools
+    * added generic qsort with custom comparator callback
+  * VDP: more flexible VRAM tilemap configuration (window plan don't have to be first map).
+  * Bitmap mode: can now set bitmap mode in window plan
+  * changed to MIT license
+  * refactoring
+
+**SAMPLE**
+  * Bench: added sprite donut animation test.
+
+
 ## Changelog 1.21 (May 2016) ##
 
 **LIBRARY**
-  * SPRITE: fixed a bug causing corrupted sprite after SPR_release(..) operation
-  * TOOLS: reintroduced zlib_unpack(..) method (accidentally removed from header)
+  * SPRITE: fixed a bug causing corrupted sprite after `SPR_release(..)` operation
+  * TOOLS: reintroduced `zlib_unpack(..)` method (accidentally removed from header)
 
 **SAMPLE**
   * Bench
-    * fixed a bug causing address error on real hardware during 'Sprite test'.
-    * added 2 tests in 'BG test'
+    * fixed a bug causing address error on real hardware during `Sprite test`.
+    * added 2 tests in `BG test`
 
 
 ## Changelog 1.2 (May 2016) ##

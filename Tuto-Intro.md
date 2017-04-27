@@ -1,7 +1,7 @@
 ## Introduction ##
-These several basic tutorials aim to give you the basis to start developing on the Sega Genesis / Megadrive using SGDK.
+These basic tutorials aim to give you the basis to start developing on the Sega Genesis / Megadrive using SGDK.
 
-Written in C language (ASM is out of scope), you'll be able to fully understand them if you already have basic knowledge on how the Genny works.
+Written in C language (ASM is out of scope but still possible), you'll be able to fully understand them if you already have basic knowledge on how the Genny works.
 
 So, before you start reading the tutorials, be sure to check and read these others documents:
   * [Genesis Technical Overview](http://emudocs.org/Genesis/sega2f.htm) by Sega

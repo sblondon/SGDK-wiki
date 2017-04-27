@@ -38,7 +38,7 @@ You can declare fix16 or fix32 variables this way :
   value_s16 = 18;
   value_s32 = 123;
 
-  // convert integer to fix16 / fix 32
+  // convert integer to fix16 / fix32
   value_f16 = intToFix16(value_s16);
   value_f32 = intToFix32(value_s32);
 ```

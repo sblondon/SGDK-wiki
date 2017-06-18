@@ -20,7 +20,7 @@ Get the last version: [SGDK 1.30](https://www.dropbox.com/s/b3rso72uousjk7l/sgdk
 ## Changelog 1.30 (June 2017) ##
 
 **DOCUMENTATION**
-  * updated to last version
+  * Updated to last version
 
 **COMPILER**
   * Updated to GCC 6.3 (thanks a tons to Gligli for that !)
@@ -45,7 +45,7 @@ Get the last version: [SGDK 1.30](https://www.dropbox.com/s/b3rso72uousjk7l/sgdk
     * some changes to internal structures to provide better performance
   * VDP BG/Tile:
     * fixed a minor bug in VDP_setTileMapDataEx(..) and VDP_setTileMapDataRectEx(..) methods (thanks to Alekmaul for reporting it)
-  * minors fixes...
+  * Minors fixes...
 
 **SAMPLE**
   * Bench:

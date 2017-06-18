@@ -1,8 +1,10 @@
 ## Download ##
 
-Get the last version: [SGDK 1.22](https://www.dropbox.com/s/wcv0noc91wd22ve/sgdk122.7z?dl=0)
+Get the last version: [SGDK 1.30](https://www.dropbox.com/s/b3rso72uousjk7l/sgdk130.7z?dl=0)
 
 **Old versions**
+  * [SGDK 1.22a](https://www.dropbox.com/s/17q2xidtw33q517/sgdk122a.7z?dl=0)
+  * [SGDK 1.22](https://www.dropbox.com/s/8ocwkgttf6vbku7/sgdk121.7z?dl=0)
   * [SGDK 1.21](https://www.dropbox.com/s/8ocwkgttf6vbku7/sgdk121.7z?dl=0)
   * [SGDK 1.2](https://www.dropbox.com/s/ee3159mtbyo8mlt/sgdk12.7z?dl=0)
   * [SGDK 1.12](https://www.dropbox.com/s/2cnlpcoiowq6178/sgdk112.7z?dl=0)

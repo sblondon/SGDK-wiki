@@ -1,8 +1,9 @@
 ## Download ##
 
-Get the last version: [SGDK 1.30](https://www.dropbox.com/s/b3rso72uousjk7l/sgdk130.7z?dl=0)
+Get the last version: [SGDK 1.31](https://www.dropbox.com/s/1fejuksb5w37eoe/sgdk131.7z?dl=0)
 
 **Old versions**
+  * [SGDK 1.30](https://www.dropbox.com/s/b3rso72uousjk7l/sgdk130.7z?dl=0)
   * [SGDK 1.22a](https://www.dropbox.com/s/17q2xidtw33q517/sgdk122a.7z?dl=0)
   * [SGDK 1.22](https://www.dropbox.com/s/8ocwkgttf6vbku7/sgdk121.7z?dl=0)
   * [SGDK 1.21](https://www.dropbox.com/s/8ocwkgttf6vbku7/sgdk121.7z?dl=0)
@@ -16,6 +17,22 @@ Get the last version: [SGDK 1.30](https://www.dropbox.com/s/b3rso72uousjk7l/sgdk
 
 
 ---
+
+## Changelog 1.31 (July 2017) ##
+
+**DOCUMENTATION**
+  * minor fix and updated to last version
+
+**COMPILER**
+  * fixed debug build in 'build_lib' batch
+
+**LIBRARY**
+  * JOY:
+    - fixed joy state variables declaration to avoid issues when GCC -O3 optimization level is used.
+  * SPRITE:
+    - added ALWAYS_ON_TOP flag to keep a sprite above others sprites whatever is sorting order.
+    - minor fix on sprite sort
+
 
 ## Changelog 1.30 (June 2017) ##
 

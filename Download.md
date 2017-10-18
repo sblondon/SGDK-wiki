@@ -1,8 +1,9 @@
 ## Download ##
 
-Get the last version: [SGDK 1.31](https://www.dropbox.com/s/1fejuksb5w37eoe/sgdk131.7z?dl=0)
+Get the last version: [SGDK 1.32](https://www.dropbox.com/s/wrb8ifxsfus7u8x/sgdk132.7z?dl=0)
 
 **Old versions**
+  * [SGDK 1.31](https://www.dropbox.com/s/1fejuksb5w37eoe/sgdk131.7z?dl=0)
   * [SGDK 1.30](https://www.dropbox.com/s/b3rso72uousjk7l/sgdk130.7z?dl=0)
   * [SGDK 1.22a](https://www.dropbox.com/s/17q2xidtw33q517/sgdk122a.7z?dl=0)
   * [SGDK 1.22](https://www.dropbox.com/s/8ocwkgttf6vbku7/sgdk121.7z?dl=0)
@@ -17,6 +18,44 @@ Get the last version: [SGDK 1.31](https://www.dropbox.com/s/1fejuksb5w37eoe/sgdk
 
 
 ---
+
+## Changelog 1.32 (October 2017) ##
+
+**COMPILER**
+  * added VS project for easier compilation with Visual Studio (thanks to lab313)
+
+**LIBRARY**
+  * TIMER
+    - fixed getSubTick() method (no more possible rollback)
+    - minor fix in getFPS() and getFPS_f() methods
+  * VDP
+    - tweaked default VRAM memory layout
+  * BITMAP
+    - changed get/setPixelXXX(..) methods so they now work on single pixel (not anymore doubled X pixel resolution)
+    - changed drawLine(..) method so it now work on single pixel (not anymore doubled X pixel resolution).
+      WARNING: drawLine(..) is not anymore doing clipping, use BMP_clipLine(..) first for that.
+    - added get/setPixelXXXFast(..) methods for fast get/set pixel operation (no clipping check)
+  * SOUND
+    - fixed auto PCM selection when playing sample with driver 2ADPCM and 4PCM.
+    - fixed default tempo for PAL system with XGM driver
+  * SPRITE
+      WARNING: you now require to set the sprite depth to use depth sorting (not anymore using the sprite Y position).
+    - replaced SPR_FLAG_AUTO_YSORTING by SPR_FLAG_AUTO_DEPTH_SORTING
+    - replaced SPR_setYSorting(..) method by SPR_setDepthSorting(..) / SPR_setZSorting(..)
+    - replaced SPR_sortOnYPos() by SPR_sortOnDepth()
+    - added void SPR_setDepth(..) / SPR_setZ(..) methods to set sprite depth
+    - fixed VDP_updateSprites() with DMA queue operation (prevent sprite table modifications before DMA occurs).
+  * STRING
+    - added int16ToStr(..) and uint16ToStr(..) methods (faster than intToStr(..) or uintToStr(..) for 16 bit integer, thanks to clbr)
+    - optimized intToStr(..) and uintToStr(..) methods (thanks to clbr for that)
+
+**SAMPLE**
+  * added XGM Player sample :)
+  * Bench
+    - added some pixels / line draw tests
+  * Donuts
+    - updated for new depth sorting refactoring
+
 
 ## Changelog 1.31 (July 2017) ##
 

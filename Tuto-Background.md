@@ -56,7 +56,7 @@ Now, just follow the steps
 	//we'll use one of the pre-loaded pal for now
 	
 	//write our tile 1 on plane A at (5,5) with pal 0
-	VDP_setTileMapXY(APLAN, 1, 5, 5);
+	VDP_setTileMapXY(PLAN_A, 1, 5, 5);
 	
 	// ... code
 	
@@ -84,7 +84,7 @@ So, to write it flipped green on B plane, you could write
 	// 1 = vflip
 	// 0 = no hflip
 	// 1 = tile 1
-	VDP_setTileMapXY(BPLAN, TILE_ATTR_FULL(PAL2, 0, 1, 0, 1), 6, 5);
+	VDP_setTileMapXY(PLAN_B, TILE_ATTR_FULL(PAL2, 0, 1, 0, 1), 6, 5);
 	
 	// ... code
 ```
@@ -104,10 +104,10 @@ You could easily see the power of this when scrolling planes at different speed 
 	// ... code
 	
 	// the same tile is drawn on the 2 plane but with different pal and priority...which one is in front ?
-	VDP_setTileMapXY(APLAN, TILE_ATTR_FULL(PAL1, 1, 0, 0, 1), 7, 7);
-	VDP_setTileMapXY(BPLAN, TILE_ATTR_FULL(PAL2, 0, 0, 0, 1), 7, 7);
-	VDP_setTileMapXY(APLAN, TILE_ATTR_FULL(PAL1, 0, 0, 0, 1), 8, 7);
-	VDP_setTileMapXY(BPLAN, TILE_ATTR_FULL(PAL2, 1, 0, 0, 1), 8, 7);
+	VDP_setTileMapXY(PLAN_A, TILE_ATTR_FULL(PAL1, 1, 0, 0, 1), 7, 7);
+	VDP_setTileMapXY(PLAN_B, TILE_ATTR_FULL(PAL2, 0, 0, 0, 1), 7, 7);
+	VDP_setTileMapXY(PLAN_A, TILE_ATTR_FULL(PAL1, 0, 0, 0, 1), 8, 7);
+	VDP_setTileMapXY(PLAN_B, TILE_ATTR_FULL(PAL2, 1, 0, 0, 1), 8, 7);
 	
 	// ... code
 ```
@@ -117,7 +117,7 @@ Here, at (7,7) plane A is in front of plane B but, at (8,7), plane B is in front
 
 But, what will happen if the planes get the same priority ?
 
-The default order is kept : plane A is in front of plane B.
+The default order is kept: plane A is in front of plane B.
 
 
 ### Fill ###
@@ -130,7 +130,7 @@ Very boring but, hopefully, SGDK came to the rescue with `VDP_fillTileMapRect`.
 	// ... code
 	
 	// fill a 8x8 square of blue tile at (12,12)
-	VDP_fillTileMapRect(BPLAN, TILE_ATTR_FULL(PAL3, 0, 0, 0, TILE1), 12, 12, 8, 8);
+	VDP_fillTileMapRect(PLAN_B, TILE_ATTR_FULL(PAL3, 0, 0, 0, TILE1), 12, 12, 8, 8);
 	
 	// ... code
 ```
@@ -197,7 +197,7 @@ This function draw FROM the tile index in argument to the last needed to fill th
 
 ```
 	// draw the moon at (12,12)
-	VDP_fillTileMapRectInc(BPLAN, TILE_ATTR_FULL(PAL1, 0, 0, 0, 1), 12, 12, w / 8, h / 8);
+	VDP_fillTileMapRectInc(PLAN_B, TILE_ATTR_FULL(PAL1, 0, 0, 0, 1), 12, 12, w / 8, h / 8);
 ```
 
 
@@ -208,7 +208,7 @@ Download : [Bitmap tiles project](files/tut3_TilesBitmap.zip)
 
 If you use a large amount of tiles, we strongly suggest you to compress them (using RLE, huffman, ...).
 
-Compression is defined at resource declaration level, the last parameter of IMAGE resource allow you to define which type of compression to use (see rescomp.txt file for more details).
+Compression is defined at resource declaration level, the last parameter of BITMAP resource allow you to define which type of compression to use (see rescomp.txt file for more details).
 
 
 ### Misc ###

@@ -1,8 +1,9 @@
 ## Download ##
 
-Get the last version: [SGDK 1.32](https://www.dropbox.com/s/wrb8ifxsfus7u8x/sgdk132.7z?dl=0)
+Get the last version: [SGDK 1.33](https://github.com/Stephane-D/SGDK/releases/download/v1.33/sgdk133.7z)
 
 **Old versions**
+  * [SGDK 1.32](https://github.com/Stephane-D/SGDK/releases/download/v1.32/sgdk132.7z)
   * [SGDK 1.31](https://www.dropbox.com/s/1fejuksb5w37eoe/sgdk131.7z?dl=0)
   * [SGDK 1.30](https://www.dropbox.com/s/b3rso72uousjk7l/sgdk130.7z?dl=0)
   * [SGDK 1.22a](https://www.dropbox.com/s/17q2xidtw33q517/sgdk122a.7z?dl=0)
@@ -18,6 +19,21 @@ Get the last version: [SGDK 1.32](https://www.dropbox.com/s/wrb8ifxsfus7u8x/sgdk
 
 
 ---
+
+## Changelog 1.33 (November 2017) ##
+
+**LIBRARY**
+  * DMA
+    - added HALT_Z80_ON_DMA flag in config.h to enable Z80 halt on DMA (avoid corruptions or sound issues on Tectoy MD).
+    - deprecated 'vdp_dma' unit now forward calls to 'dma' unit.
+    - added wait DMA checking (DMA fill or DMA copy operation) before doing a DMA operation.
+  * SPRITE
+    - simplified sprite sorting (always enabled, just need to use SPR_setDepth(..) method if needed)
+    - fixed a regression which was causing 1 frame latency in sprite update.
+
+**SAMPLE**
+  * minor change to sound sample
+
 
 ## Changelog 1.32 (October 2017) ##
 

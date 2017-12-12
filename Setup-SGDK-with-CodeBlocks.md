@@ -1,6 +1,4 @@
-For those who don't want to read the whole thing, here's a youtube video explaining the process (thanks Matteus):
-https://youtu.be/cDEGpLxKDK0
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cDEGpLxKDK0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+For those who don't want to read the whole thing, here's a [Youtube video](https://www.youtube.com/embed/cDEGpLxKDK0) explaining the process (thanks Matteus).
 
 **Here's how to use SGDK within Code::Blocks IDE**
   * Define "GDK" environment variable to your installation path in unix path format (example D:/apps/sgdk).

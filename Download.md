@@ -1,8 +1,9 @@
 ## Download ##
 
-Get the last version: [SGDK 1.33](https://github.com/Stephane-D/SGDK/releases/download/v1.33/sgdk133.7z)
+Get the last version: [SGDK 1.34](https://github.com/Stephane-D/SGDK/releases/download/1.34/sgdk134.7z)
 
 **Old versions**
+  * [SGDK 1.33](https://github.com/Stephane-D/SGDK/releases/download/v1.33/sgdk133.7z)
   * [SGDK 1.32](https://github.com/Stephane-D/SGDK/releases/download/v1.32/sgdk132.7z)
   * [SGDK 1.31](https://www.dropbox.com/s/1fejuksb5w37eoe/sgdk131.7z?dl=0)
   * [SGDK 1.30](https://www.dropbox.com/s/b3rso72uousjk7l/sgdk130.7z?dl=0)
@@ -19,6 +20,25 @@ Get the last version: [SGDK 1.33](https://github.com/Stephane-D/SGDK/releases/do
 
 
 ---
+
+## Changelog 1.34 (January 2018) ##
+
+**LIBRARY**
+  * DMA
+   - added DMA queue support for all (or almost all) methods supporting DMA operation
+  * SPRITE
+   - fixed timing issue when changing FRAME or ANIMATION manually.
+   - fixed sprite sorting when multiple depth were modified in a single SPR_update(..).
+   - safer sprite allocation / release.
+  * MEMORY
+    - added MEM_getLargestFreeBlock() to get the largest available block of memory.
+  * improved LZ4W compression (better compression rate, faster compression...)
+  * minors changes on method updating tilemap through X,Y position (safer)
+  * some cleanup
+
+**SAMPLE**
+  * reworked benchmark sample to avoid out of memory error (^^)
+
 
 ## Changelog 1.33 (November 2017) ##
 

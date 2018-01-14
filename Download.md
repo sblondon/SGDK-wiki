@@ -25,11 +25,11 @@ Get the last version: [SGDK 1.34](https://github.com/Stephane-D/SGDK/releases/do
 
 **LIBRARY**
   * DMA
-   - added DMA queue support for all (or almost all) methods supporting DMA operation
+    - added DMA queue support for all (or almost all) methods supporting DMA operation
   * SPRITE
-   - fixed timing issue when changing FRAME or ANIMATION manually.
-   - fixed sprite sorting when multiple depth were modified in a single SPR_update(..).
-   - safer sprite allocation / release.
+    - fixed timing issue when changing FRAME or ANIMATION manually.
+    - fixed sprite sorting when multiple depth were modified in a single SPR_update(..).
+    - safer sprite allocation / release.
   * MEMORY
     - added MEM_getLargestFreeBlock() to get the largest available block of memory.
   * improved LZ4W compression (better compression rate, faster compression...)

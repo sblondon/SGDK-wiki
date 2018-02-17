@@ -17,8 +17,8 @@ They are virtual types which internally use s16 (short) and s32 (long) to simula
 You can declare fix16 or fix32 variables this way :
 
 ```
-  f16 value_f16;
-  f32 value_f32;
+  fix16 value_f16;
+  fix32 value_f32;
 ```
 
 ### Assigning from constants ###
@@ -64,7 +64,7 @@ You can declare fix16 or fix32 variables this way :
 ### Basic math operations ###
 
 ```
-  f16 f, f1, f2;
+  fix16 f, f1, f2;
   s16 i;
 
   f1 = FIX16(5.5);

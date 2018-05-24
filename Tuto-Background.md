@@ -152,33 +152,26 @@ We'll try now to draw this moon on screen
   1. the bitmap size should be 8 pixel aligned (ie : 64x32 is good where 67x31 isn't)
   1. the bitmap should be 4bpp or 8bpp and respect megadrive color constraints (16 colors per tile and no more than 64 colors at max)...
 
+For this moon, you will have 8x8 tiles loaded.
+
 SGDK is able to handle many type of resources file (PNG file are also accepted), you just need to define them in a .res file and rescomp will compile them (see rescomp.txt to see how to define your resources) and generate a 'name\_of\_res\_file.h` and a `name\_of\_res\_file.o`
 
 `name_of_res_file.o` is the object form of your compiled resources.
 
 `name_of_res_file.h` contains the resource declarations and let you access, for instance, your bitmap image as a Bitmap data structure.
 
-so, including `name_of_bmp_file.h`, you could load the bitmap on VRAM this way.
+So, after compiling the moon as an IMAGE in the .res file, and including `moon.h`, you could load the bitmap on VRAM and immediately draw it this way.
 
 ```
 #include "moon.h"
 
 int main( )
 {
-	// get the image width (in pixel) ==> should be 8pix aligned
-	u16 w = moon.w;
-	// get the image height (in pixel)  ==> should be 8px aligned
-	u16 h = moon.h;
-
 	// get the palette data of moon
 	VDP_setPalette(PAL1, moon.palette->data);
 
-	// load bitmap data of moon in VRAM
-	// w/8 = width in tiles we want to load
-	// h/8 = height in tile we want to load
-	// w/8 = width in tiles of the bitamp
-	// the 3rd arg is needed because you could load only a part of the bitmap if you want but SGDK needs the width as reference
-	VDP_loadBMPTileData(moon.image, 1, w / 8, h / 8, w/8 );
+	// load bitmap data of moon in VRAM and draw
+	VDP_drawImageEx(PLAN_A, &moon, TILE_ATTR_FULL(PAL1, 0, 0, 0, 1), 12, 12, 0, CPU);
 
 	while(1)
 	{
@@ -187,17 +180,6 @@ int main( )
 
 	return 0;
 }
-```
-
-For this moon, you have 8x8 tiles loaded.
-
-You could draw them by hand using `VDP_setTileMapXY` but it's boring and, as usual when it's a boring process, SGDK has a magical function for it : `VDP_fillTileMapRectInc`.
-
-This function draw FROM the tile index in argument to the last needed to fill the rect wanted.
-
-```
-	// draw the moon at (12,12)
-	VDP_fillTileMapRectInc(PLAN_B, TILE_ATTR_FULL(PAL1, 0, 0, 0, 1), 12, 12, w / 8, h / 8);
 ```
 
 

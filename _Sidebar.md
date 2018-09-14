@@ -12,6 +12,5 @@
   1. **[Input](https://github.com/Stephane-D/SGDK/wiki/Tuto-Input)**
   1. **[Tile and tilemap](https://github.com/Stephane-D/SGDK/wiki/Tuto-Background)**
   1. **[Sprites](https://github.com/Stephane-D/SGDK/wiki/Tuto-Sprites-%28old%29)**
-  1. **Misc**
-       **[SGDK and Maths](https://github.com/Stephane-D/SGDK/wiki/Tuto-Maths)**
+  1. **[SGDK and Maths](https://github.com/Stephane-D/SGDK/wiki/Tuto-Maths)**
   1. **more to come soon...**

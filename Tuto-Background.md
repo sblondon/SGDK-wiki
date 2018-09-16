@@ -1,21 +1,21 @@
 If you read documents linked on [first part](Tuto-Hello-World), you should know how to write more than 'Hello World' on screen :
   * the Genny redraws 2 planes on refresh (+ a third one for the sprites)
   * each plane is filled with 8x8 pixel tile
-  * each plane could be 32x32 to 128x128 tiles in memory (only up to 40x28 is visible on screen)
+  * each plane can be a maximum of 4,096 tiles in memory (at dimensions 32x32, 32x64, 64x64, or 32x128, with up to 40x28 visible on screen)
   * each plane is filled from left to right and top to bottom
   * each tile could be used several times in any plane, with the same pal or not
   * each tile could be used with any of the 4 pal available
   * each tile could be drawn flipped, w/o more memory
-  * a very important amout of tiles could be loaded using DMA
+  * a very important amount of tiles could be loaded using DMA
 
 ### Basic ###
 Some other data you should know :
   * one tile is made of 32bytes : 4byte per line
   * each pixel of the tile is so a 4bit value which is the color index, from 0x0 to 0xF
-  * the first tile (tile 0) on VRam will be used to fill the background
-  * SGDK initialize enought space on VRAM for 1310 tiles (+ 96 for the font)
+  * the first tile (tile 0) on VRAM will be used to fill the background
+  * SGDK initialize enough space on VRAM for 1310 tiles (+ 96 for the font)
   * a tile is also called a pattern or a char
-  * a tile on screen isn't removed on refresh (ie no need to draw it each refresh!)
+  * a tile on screen isn't removed on refresh (i.e. no need to draw it each refresh!)
   * a pal is 16 colors wide
 
 So, the steps to draw a tile on screen are the following
@@ -70,9 +70,9 @@ Now, just follow the steps
 
 The tile is so drawn on screen using some fade of grey...but what about flipping and pal ?
 
-The 2nd argument of `VDP_setTileMapXY` func could be more than only the tile index.
+The 2nd argument of `VDP_setTileMapXY` function could be more than only the tile index.
 
-It is, in fact, the tile properties : pal index, priority, vflipping, hflipping and tile index.
+It is, in fact, the tile properties : pal index, priority, V-flipping, H-flipping, and tile index.
 
 So, to write it flipped green on B plane, you could write
 
@@ -149,7 +149,7 @@ We'll try now to draw this moon on screen
 
 
 2 important things to check before to continue
-  1. the bitmap size should be 8 pixel aligned (ie : 64x32 is good where 67x31 isn't)
+  1. the bitmap size should be 8 pixel aligned (i.e. : 64x32 is good where 67x31 isn't)
   1. the bitmap should be 4bpp or 8bpp and respect megadrive color constraints (16 colors per tile and no more than 64 colors at max)...
 
 For this moon, you will have 8x8 tiles loaded.

@@ -61,12 +61,10 @@
 ![https://github.com/Stephane-D/SGDK/wiki/images/cb_11.jpg](https://github.com/Stephane-D/SGDK/wiki/images/cb_11.jpg)
 
 
-  * Validate your changes and now you can add files to your project, your files should be localized in your project directory as following :
-```
-sources files (C, S) : root directory or "src" directory
-includes files (H, INC) : root directory or "inc" directory
-resources files (S, ASM, TFC, TFD, PCM, RAW, WAV, BIN, BMP, RC, RES) : root directory or "res" directory
-```
+  * Validate your changes and now you can add files to your project, your files should be localized in your project directory as following:
+    * Source files (C, S): root directory or "src" directory
+    * Include files (H, INC): root directory or "inc" directory
+    * Resource files (VGM, XGM, WAV, PNG, BMP, RES, ...): root directory or "res" directory
 
 ![https://github.com/Stephane-D/SGDK/wiki/images/cb_12.jpg](https://github.com/Stephane-D/SGDK/wiki/images/cb_12.jpg)
 

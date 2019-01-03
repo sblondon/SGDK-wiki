@@ -66,7 +66,5 @@
     * Include files (H, INC): root directory or "inc" directory
     * Resource files (VGM, XGM, WAV, PNG, BMP, RES, ...): root directory or "res" directory
 
-![https://github.com/Stephane-D/SGDK/wiki/images/cb_12.jpg](https://github.com/Stephane-D/SGDK/wiki/images/cb_12.jpg)
-
 
   * Compile your project in the "Build" menu, "Build" command or press Ctrl+F9 keys. If all is correctly setup you should obtain a rom.bin file in the out directory of your project directory :)

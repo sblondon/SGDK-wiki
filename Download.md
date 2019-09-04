@@ -1,8 +1,9 @@
 ## Download ##
 
-Get the last version: [SGDK 1.4](https://github.com/Stephane-D/SGDK/releases/download/v1.40/sgdk140.7z)
+Get the last version: [SGDK 1.41](https://github.com/Stephane-D/SGDK/releases/download/v1.41/sgdk141.7z)
 
 **Old versions**
+  * [SGDK 1.4](https://github.com/Stephane-D/SGDK/releases/download/v1.40/sgdk140.7z)
   * [SGDK 1.34](https://github.com/Stephane-D/SGDK/releases/download/1.34/sgdk134.7z)
   * [SGDK 1.33](https://github.com/Stephane-D/SGDK/releases/download/v1.33/sgdk133.7z)
   * [SGDK 1.32](https://github.com/Stephane-D/SGDK/releases/download/v1.32/sgdk132.7z)
@@ -21,6 +22,55 @@ Get the last version: [SGDK 1.4](https://github.com/Stephane-D/SGDK/releases/dow
 
 
 ---
+
+## Changelog 1.41 (September 2019) ##
+
+**COMPILER**
+* RESCOMP
+  - added new sprite optimization options to SPRITE resource (see rescomp.txt for details)
+  - minor tweak on binary export order (can save some bytes with LZ4W compression)
+  - fixed resource duplication bug
+* XGMTOOL
+  - fixed VGM loop
+  
+**LIBRARY**
+* SYS
+  - safer _SYS_setInterruptMaskLevel()_ so interrupt mask is not lost after _SYS_enablesInts()_ call
+  - fixed/updated SGDK logo display code
+  - renamed _getFPS()_ / _getFPS_f()_ to _SYS_getFPS()_ / _SYS_getFPSAsFloat()_
+* DMA
+  - fixed possible DMA failure on some Megadrive when Z80 access 68K BUS at same time we trigger DMA
+  - minor fix on autoInc restoration after _DMA_flushQueue()_
+* VDP 
+  - tweaked default VRAM configuration so window can be freely used anywhere.
+  - added _VDP_getAdjustedVCounter()_ method to have a consistent [0..255] V-Counter (avoiding rollback issue)
+  - tweaked up _VDP_resetScreen()_ method
+  - added _VDP_setHVLatching()_ and _VDP_setDMAEnabled()_ methods
+* PALETTE
+  - fixed _VDP_getPaletteColors()_ and _VDP_getPalette(..)_ methods (regression)
+  - fixed a bug with all palette fading methods (regression)
+  - renamed _vdp_pal_ unit to _pal_ unit (so all palette methods are now called _PAL_xxx_)
+* JOY
+  - added _JOY_reset()_ method to reset controller detection without clearing JOY state change event callback
+  - safer _JOY_setSupport(..)_ / gun controller implementation
+  - more permissive mouse id detection in mouse pooling code
+  - fixed an issue where an EA 4-way multitap could be incorrectly detected
+* TIMER
+  - safer _waitSubTick(..)_ implementation during VInt.
+  - fixed _getSubTick()_ method to take care of HV counter latching when light guns are used.
+* RESOURCE
+  - added 2 alternate SGDK logo (free feel to use it)
+  - minor change on library resources name
+  - fixed version and added alias for old resource names
+* added _ENABLE_NEWLIB_ define in config.h file for those who want to use newlib within SGDK (you need to build it by yourself)
+* changed _u16_ to _bool_ where it makes sense to use _bool_ (internally they are the same type, it's just for readability).
+* minors tweaks, changes and fixes here and there
+
+**SAMPLE**
+* XGMPlayer
+  - updated to make it work with last SGDK (sprite engine difference mainly)
+* SOUND
+  - reintroduced cry SFX test for XGM driver
 
 ## Changelog 1.4 (May 2019) ##
 

@@ -11,14 +11,13 @@ Get the last version: [SGDK 1.41](https://github.com/Stephane-D/SGDK/releases/do
   * [SGDK 1.30](https://github.com/Stephane-D/SGDK/releases/download/v1.30/sgdk130.7z)
   * [SGDK 1.22a](https://github.com/Stephane-D/SGDK/releases/download/1.22a/sgdk122a.7z)
   * [SGDK 1.22](https://github.com/Stephane-D/SGDK/releases/download/1.22/sgdk122.7z)
-  * [SGDK 1.21](https://www.dropbox.com/s/8ocwkgttf6vbku7/sgdk121.7z?dl=0)
-  * [SGDK 1.2](https://www.dropbox.com/s/ee3159mtbyo8mlt/sgdk12.7z?dl=0)
-  * [SGDK 1.12](https://www.dropbox.com/s/2cnlpcoiowq6178/sgdk112.7z?dl=0)
-  * [SGDK 1.11](https://www.dropbox.com/s/fk51tsowolmjwaf/sgdk111.7z?dl=0)
-  * [SGDK 1.10](https://www.dropbox.com/s/ng7ga5reyay51p6/sgdk110.7z?dl=0)
-  * [SGDK 1.01](https://www.dropbox.com/s/059zcf44176r9z9/sgdk101.7z?dl=0)
-  * [SGDK 1.00](https://www.dropbox.com/s/o056nj6zgxa6k4j/sgdk100.7z?dl=0)
-  * [SGDK 0.96d](https://www.dropbox.com/s/a4oqp7i7hizivsd/sgdk096d.7z?dl=0)
+  * [SGDK 1.21](http://pc.cd/PMjrtalK)
+  * [SGDK 1.2](http://pc.cd/1sortalK)
+  * [SGDK 1.10](http://pc.cd/BhritalK)
+  * [SGDK 1.00](http://pc.cd/6T9rtalK)
+  * [SGDK 0.96](http://pc.cd/gNrrtalK)
+  * [SGDK 0.90](http://pc.cd/HWS)
+  * [SGDK 0.80](http://pc.cd/S9u7)
 
 
 ---

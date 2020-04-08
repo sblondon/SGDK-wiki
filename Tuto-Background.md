@@ -1,3 +1,5 @@
+WARNING: A bunch of constants have been renamed after commit: https://github.com/Stephane-D/SGDK/commit/c1ce6edbefa4eddc709aec24af0aec9fbe5df84f 
+
 If you read documents linked on [first part](Tuto-Hello-World), you should know how to write more than 'Hello World' on screen :
   * the Genny redraws 2 planes on refresh (+ a third one for the sprites)
   * each plane is filled with 8x8 pixel tile

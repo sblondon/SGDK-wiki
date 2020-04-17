@@ -1,8 +1,9 @@
 ## Download ##
 
-Get the last version: [SGDK 1.41](https://github.com/Stephane-D/SGDK/releases/download/v1.41/sgdk141.7z)
+Get the last version: [SGDK 1.50](https://github.com/Stephane-D/SGDK/releases/download/v1.50/sgdk150.7z)
 
 **Old versions**
+  * [SGDK 1.41](https://github.com/Stephane-D/SGDK/releases/download/v1.41/sgdk141.7z)
   * [SGDK 1.4](https://github.com/Stephane-D/SGDK/releases/download/v1.40/sgdk140.7z)
   * [SGDK 1.34](https://github.com/Stephane-D/SGDK/releases/download/1.34/sgdk134.7z)
   * [SGDK 1.33](https://github.com/Stephane-D/SGDK/releases/download/v1.33/sgdk133.7z)

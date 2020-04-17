@@ -5,7 +5,7 @@
   1. **[SGDK with Code::blocks](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-with-CodeBlocks)**
   1. **[SGDK with QtCreator](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-with-QtCreator)**
 
-# Development #
+# Dev #
 
   1. **[Introduction](https://github.com/Stephane-D/SGDK/wiki/Tuto-Intro)**
   1. **[Hello World example](https://github.com/Stephane-D/SGDK/wiki/Tuto-Hello-World)**

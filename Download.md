@@ -1,8 +1,9 @@
 ## Download ##
 
-Get the last version: [SGDK 1.50](https://github.com/Stephane-D/SGDK/releases/download/v1.50/sgdk150.7z)
+Get the last version: [SGDK 1.51](https://github.com/Stephane-D/SGDK/releases/download/v1.51/sgdk151.7z)
 
 **Old versions**
+  * [SGDK 1.50](https://github.com/Stephane-D/SGDK/releases/download/v1.50/sgdk150.7z)
   * [SGDK 1.41](https://github.com/Stephane-D/SGDK/releases/download/v1.41/sgdk141.7z)
   * [SGDK 1.4](https://github.com/Stephane-D/SGDK/releases/download/v1.40/sgdk140.7z)
   * [SGDK 1.34](https://github.com/Stephane-D/SGDK/releases/download/1.34/sgdk134.7z)
@@ -21,6 +22,43 @@ Get the last version: [SGDK 1.50](https://github.com/Stephane-D/SGDK/releases/do
   * [SGDK 0.80](https://pc.cd/S9u7)
 
 ---
+
+## Changelog 1.51 (April 2020) ##
+
+**COMPILER**
+* APPACK
+  - fixed build for 32 and 64 bit linux (thanks doragasu)
+* LZ4W
+  - minor fix  
+* RESCOMP
+  - added new sprite optimization options to SPRITE resource (see rescomp.txt for details)
+  - minor tweak on binary export order (can save some bytes with LZ4W compression)
+  - fixed resource duplication bug
+* XGMTOOL
+  - fixed VGM loop
+  
+**LIBRARY**
+* fixed corrupted library binaries which were displaying a blank screen on some MD models
+* MEMORY
+  - fixed a minor in memory packing operation
+  - added MEM_pack() here and there to avoid memory fragmentation
+* VDP
+  - fixed getAdjustedVCounterInternal(..) which could return value > 255 in some rare situation
+  - moved VDP DMA busy checking on reset (better to do it before accessing VDP)
+  - VDP_setPlaneSize(..):
+    - added constraint on plane size
+    - fixed maps start address calculation (when VRAM setup is asked)
+  - minor change in VDP_drawImageEx(..) to do setTileMap(..) operation using CPU (DMA is actually slower here)   
+* added SYS_showFrameLoad() / SYS_hideFrameLoad() methods to monitor CPU frame load.
+* always load font using CPU in reset process (safer)
+* fixed String unit build when ENABLE_NEWLIB set (thanks doragasu)
+* improved documentation in Joy unit (thanks Chilly Willy) and VDP (regarding DMA QUEUE usage specifically)
+
+SAMPLE
+* reduced memory usage on sample which use Bitmap mode by reducing DMA allocated memory
+* SPRITE
+  - added SYS_showFrameLoad() showcase
+
 
 ## Changelog 1.50 (April 2020) ##
 

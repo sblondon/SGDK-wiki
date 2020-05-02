@@ -1,11 +1,15 @@
-# Installation #
+## Installation & basics ##
 
-  1. **[Installation & basic use](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-basic)**
-  1. **[SGDK with Eclipse](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-with-Eclipse)**
-  1. **[SGDK with Code::blocks](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-with-CodeBlocks)**
-  1. **[SGDK with QtCreator](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-with-QtCreator)**
+  1. **[Installation](https://github.com/Stephane-D/SGDK/wiki/SGDK-Installation)**
+  1. **[SGDK usage](https://github.com/Stephane-D/SGDK/wiki/SGDK-Usage)**
 
-# Dev #
+## IDE integration ##
+
+  1. **[Eclipse](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-with-Eclipse)**
+  1. **[Code::blocks](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-with-CodeBlocks)**
+  1. **[QtCreator](https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-with-QtCreator)**
+
+## Start coding ##
 
   1. **[Introduction](https://github.com/Stephane-D/SGDK/wiki/Tuto-Intro)**
   1. **[Hello World example](https://github.com/Stephane-D/SGDK/wiki/Tuto-Hello-World)**

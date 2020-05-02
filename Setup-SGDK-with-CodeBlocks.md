@@ -32,19 +32,19 @@
 
 ![https://github.com/Stephane-D/SGDK/wiki/images/cb_07.jpg](https://github.com/Stephane-D/SGDK/wiki/images/cb_07.jpg)
 
-5. Choose the genesis compiler you just set up ("Sega Genesis Compiler" here). Uncheck the "Debug" configuration which is useless here and rename the "Release" configuration to "default" as this is the only used here. Change the outputs directory to "out\" then click on finish.
+5. Choose the genesis compiler you just set up (_Sega Genesis Compiler_ here). Uncheck the _Debug_ configuration which is useless here and rename the _Release_ configuration to _default_ as this is the only used here. Change the outputs directory to "out\" then click on finish.
 
 ![https://github.com/Stephane-D/SGDK/wiki/images/cb_08.jpg](https://github.com/Stephane-D/SGDK/wiki/images/cb_08.jpg)
 
-6. Open the contextual menu on the project and choose "Properties..."
+6. Open the contextual menu on the project and choose _Properties..._
 
 ![https://github.com/Stephane-D/SGDK/wiki/images/cb_09.jpg](https://github.com/Stephane-D/SGDK/wiki/images/cb_09.jpg)
 
-7. Use the provided makefile.gen file in the devkit as the project makefile. Don't forget to check the "This is a custom Makefile" checkbox. Then click to the "Project's build options" button.
+7. Use the provided makefile.gen file in SGDK as the project makefile. Don't forget to check the _This is a custom Makefile_ checkbox. Then click to the _Project's build options_ button.
 
 ![https://github.com/Stephane-D/SGDK/wiki/images/cb_10.jpg](https://github.com/Stephane-D/SGDK/wiki/images/cb_10.jpg)
 
-8. Select the "default" configuration in left column, check if the Selected compiler is the good one (Sega Genesis Compiler here) and go to the last tab "Make". Then modify the make commands as here :
+8. Select the _default_ configuration in left column, check if the Selected compiler is the good one (Sega Genesis Compiler here) and go to the last tab _Make_. Then modify the make commands as here:
 
 ![https://github.com/Stephane-D/SGDK/wiki/images/cb_11.jpg](https://github.com/Stephane-D/SGDK/wiki/images/cb_11.jpg)
 

@@ -23,4 +23,4 @@ To compile your project with SGDK, you need to respect the following constraints
 Then to compile your project you need to use the following command directly from your project directory:
 <pre>%GDK_WIN%\bin\make -f %GDK_WIN%\makefile.gen</pre>
 
-Normally you should obtain a rom.bin file in the _out_ directory that you can load in an emulator (or directly on the hardware if you are a lucky owner of a flash cart).
+Normally you should obtain a **_rom.bin_** file in the _out_ directory that you can load in an emulator (or directly on the hardware if you are a lucky owner of a flash cart).

@@ -7,5 +7,7 @@
 5. Now verify everything is properly setting up by trying to compile the library typing this command:
 <pre>%GDK_WIN%\bin\make -f %GDK_WIN%\makelib.gen</pre>
 
-You should see compilation logs then at the end if everything went right you should obtain the following file
+You should see compilation logs then at the end you should obtain the following file
 <pre>%GDK%/lib/libmd.a</pre>
+
+If everything went right you can go to the [SGDK Usage](https://github.com/Stephane-D/SGDK/wiki/SGDK-Usage) page !

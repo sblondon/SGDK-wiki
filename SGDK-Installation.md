@@ -10,4 +10,4 @@
 You should see compilation logs then at the end you should obtain the following file
 <pre>%GDK%/lib/libmd.a</pre>
 
-If everything went right you can go to the [SGDK Usage](https://github.com/Stephane-D/SGDK/wiki/SGDK-Usage) page !
+If everything went right you can continue to the [SGDK Usage](https://github.com/Stephane-D/SGDK/wiki/SGDK-Usage) page :)

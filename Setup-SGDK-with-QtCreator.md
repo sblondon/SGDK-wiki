@@ -1,4 +1,4 @@
-# SGDK with QtCreator
+### Here's how setup SGDK with QtCreator ###
 
 1. Download Qt from [`www.qt.io/download-open-source/`](//www.qt.io/download-open-source/)  
 2. Install QtCreator. The QtCreator checkbox is mandatory; you do not need any of the optional Qt components the installer suggests.  

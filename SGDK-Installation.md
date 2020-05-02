@@ -1,4 +1,4 @@
-SGDK Installation - Windows OS only (refer to README file for others OS)
+Note that this concerns only Windows OS (refer to README file for others OS)
 
 1. Download the SGDK archive from the [Download page](https://github.com/Stephane-D/SGDK/wiki/Download) and unzip it where it suits to you (for instance D:/sgdk).
 2. Define _GDK_ environment variable with your installation path **in unix path format** (example D:/sgdk).

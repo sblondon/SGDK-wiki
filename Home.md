@@ -10,7 +10,7 @@ Download the complete archive in [Download Section](https://github.com/Stephane-
 Unix/Linux users should give a try to the <a href='https://github.com/kubilus1/gendev/'>Gendev project</a> from Kubilis which allow to quickly setup SGDK on a Unix environment.<br>
 And now MACOS users also have access to SGDK with <a href='https://github.com/SONIC3D/gendev-macos'>Gendev MacOS</a>, thanks to Sonic3D for making it :)
 
-After you downloaded the SGDK archive, check the <a href='https://github.com/Stephane-D/SGDK/wiki/Setup-SGDK-basic'>Wiki Section</a> to get installation instructions and basics tutorials.<br>
+After you downloaded the SGDK archive, check the <a href='https://github.com/Stephane-D/SGDK/wiki/SGDK-Installation'>Wiki Section</a> to get installation instructions and basics tutorials.<br>
 
 You are more than welcome to share your experience and get further assistance on <a href='http://gendev.spritesmind.net/forum'>SpritesMind forum</a> or <a href='https://discord.gg/xmnBWQS'>SGDK Discord</a> !
 

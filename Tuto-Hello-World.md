@@ -3,27 +3,26 @@
 Whenever you use [Code::Block](Setup-SGDK-with-CodeBlocks), [Eclipse](Setup-SGDK-with-Eclipse), [QtCreator](Setup-SGDK-with-QtCreator) or [any other source code editor](SGDK-Usage), you need your `main` function.
 
 ```
-int main( )
+int main(u16 hard)
 {
-	return (0);
+	return 0;
 }
 ```
 
-
-This function is your starting point and is automatically called on start up.
+As any C program this function is your starting point and is automatically called on start up.
+Note that with SGDK, your main function receive a single parameter named `hard` which allow to know if you are on a hard reset (hard = 1, just turned the system ON) or on a soft reset (hard = 0, reset button was pressed).
 
 Before that, SGDK initializes several things for you  :
+  * clear RAM and initialize variables
   * set default values for each [VDP register](http://info.sonicretro.org/SCHG:VDP_Documentation/General/Registers)
-  * clean Video RAM
-  * load 4 default palettes : grey, red, green and blue
+  * clear video RAM
+  * load 4 default palettes: grey, red, green and blue
   * load a default font for your text print need
   * init input handling
-  * reset sound and music
-  * load a default sound driver ("2 channels PCM sample" driver in SGDK 0.7)
+  * reset sound system
 
-so, for basic stuff and testing, everything is ready to use!
-It's so easy to call VDP, input or sprites stuff right on your main function....if you don't forget to include the `genesis.h` header!
-
+so, for basic stuff and testing, everything is ready to use !
+It's so easy to call VDP, input or sprites stuff right on your main function....if you don't forget to include the `genesis.h` header !
 
 For now, let's see how to print the infamous _**Hello World**_.
 

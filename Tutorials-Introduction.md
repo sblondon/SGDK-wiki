@@ -7,4 +7,4 @@ It's also important to have, at least, a basic knowledge about the _Sega Mega Dr
 
 These basic tutorials aim to give you the basis to start developing on the Sega Genesis / Mega Drive using SGDK, they will help you understanding how SGDK work and how to use it efficiently but **they do not aim to learn you C language programming nor to explain you how the Sega Mega Drive works internally** so take attention to the disclaimer.<br>
 <br>
-If you feel ready then you can continue on the [Hello World tutorial](https://github.com/Stephane-D/SGDK/wiki/Tuto-Hello-World) !
+If you feel ready then you can continue on the [Hello World tutorial](Tuto-Hello-World) !

@@ -1,6 +1,6 @@
 ## Hello World ##
 
-Whenever you use [Code::Block](Setup-SGDK-with-CodeBlocks), [Eclipse](Setup-SGDK-with-Eclipse), [QtCreator](Setup-SGDK-with-QtCreator) or [any other source code editor](Setup-SGDK-basic), you need your `main` function.
+Whenever you use [Code::Block](Setup-SGDK-with-CodeBlocks), [Eclipse](Setup-SGDK-with-Eclipse), [QtCreator](Setup-SGDK-with-QtCreator) or [any other source code editor](SGDK-Usage), you need your `main` function.
 
 ```
 int main( )

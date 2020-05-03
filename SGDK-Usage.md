@@ -1,4 +1,4 @@
-To compile your project with SGDK, you need to respect the following constraints in your project folder:
+To be properly recognized by SGDK makefile, you need to respect the following constraints in your project folder:
   * source files: should be located in _/_ (root) or _/src_ directory.
     * .c = C source file
     * .s = 68k GAS assembly source file

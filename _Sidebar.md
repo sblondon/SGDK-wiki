@@ -1,7 +1,7 @@
 ## Installation & basics ##
 
-  1. **[Installation](https://github.com/Stephane-D/SGDK/wiki/SGDK-Installation)**
-  1. **[SGDK usage](https://github.com/Stephane-D/SGDK/wiki/SGDK-Usage)**
+  1. **[Installation](SGDK-Installation)**
+  1. **[SGDK usage](SGDK-Usage)**
 
 ## IDE integration ##
 

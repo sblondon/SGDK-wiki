@@ -11,7 +11,7 @@
 
 ## Start coding ##
 
-  1. **[Introduction](Tutorials-Introduction)**
+  1. **[Introduction](Tuto-Introduction)**
   1. **[Hello World example](Tuto-Hello-World)**
   1. **[Input](Tuto-Input)**
   1. **[Tile and tilemap](Tuto-Background)**

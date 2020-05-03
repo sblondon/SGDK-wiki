@@ -20,7 +20,7 @@ To be properly recognized by SGDK makefile, you need to respect the following co
     * .bin = binary data file
     * read the [bin/rescomp.txt](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt) file to have more information about supported resource files.
 
-Then to compile your project you need to use the following command directly from your project directory:
+Then to compile your project you need to use the following command directly from your project folder:
 <pre>%GDK_WIN%\bin\make -f %GDK_WIN%\makefile.gen</pre>
 
 Normally you should obtain a **_rom.bin_** file in the _out_ directory that you can load in an emulator (or directly on the hardware if you are a lucky owner of a flash cart).

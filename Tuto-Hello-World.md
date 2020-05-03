@@ -10,7 +10,7 @@ int main(u16 hard)
 ```
 
 As any C program this function is your starting point and is automatically called on start up.
-Note that with SGDK, your main function receive a single parameter named `hard` which allow to know if you are on a hard reset (hard = 1, just turned the system ON) or on a soft reset (hard = 0, reset button was pressed).
+Note that with SGDK, your main function receive a single parameter named `hard` which allow to know if you are on a hard reset (hard = 1 mean that we just turned the system ON) or on a soft reset (hard = 0 mean that reset button was pressed).
 
 Before that, SGDK initializes several things for you  :
   * clear RAM and initialize variables

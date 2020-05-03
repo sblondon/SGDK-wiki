@@ -25,4 +25,4 @@ Then to compile your project you need to use the following command directly from
 
 Normally you should obtain a **_rom.bin_** file in the _out_ directory that you can load in an emulator (or directly on the hardware if you are a lucky owner of a flash cart).
 
-You can now continue to the [tutorials section](https://github.com/Stephane-D/SGDK/wiki/Tutorials-Introduction)
+You can now continue to the [tutorials section](https://github.com/Stephane-D/SGDK/wiki/Tutorials-Introduction) to start serious things :)

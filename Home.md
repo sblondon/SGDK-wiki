@@ -5,6 +5,8 @@ SGDK is split in several parts:
 * GCC compiler binaries (for Windows system only as you can easily install them on Unix based system).
 * Library tools (resources compiler and associated tools). Binaries are provided only for Windows system only but sources are included so you can compile them easily, note that some tools requires Java to be installed.
 
+SGDK library and custom tools are distributed under the MIT license, GCC compiler and libgcc are under GNU license (GPL3) and any software build from it (as the SGDK library) is under the GCC runtime library exception license.
+
 Download the complete archive in [Download Section](https://github.com/Stephane-D/SGDK/wiki/Download).<br>
 <br>
 **Unix/Linux:** look at the <a href='https://github.com/kubilus1/gendev/'>Gendev project</a> from Kubilis which allow to quickly setup SGDK on a Unix environment.<br>

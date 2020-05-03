@@ -1,4 +1,4 @@
-## SGDK : A small, open and free development kit for the Sega Megadrive ##
+## SGDK : A small, open and free development kit for the Sega Mega Drive ##
 
 SGDK is split in several parts:
 * The library itself provided with full code sources, some samples and a Doxygen documentation (in the _doc_ folder).

@@ -6,7 +6,7 @@ SGDK uses a generic makefile to compile project. In order to be properly recogni
 * **res** = resource files<br>
 * **out** = output files (will be created automatically)<br>
 
-where:
+where
   * source files can be .c (C source file), .s (68k assembly source file) or .s80 (Z80 assembly source file)
   * include files can be .h (C include file) or .inc (assembly include file)
   * primary resource files should be .res (resource definition file compiled by _rescomp_ tool, see [bin/rescomp.txt](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt) file)

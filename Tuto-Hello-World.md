@@ -27,7 +27,8 @@ Now if you want to use VDP, input, sprite or whatever function from SGDK, you fi
 
 Let's see that by replicating the infamous _**Hello World**_ example :)
 
-Printing on screen is a VDP (Video Display Processor) task so you need to call `VDP_drawText(<your_text>, <x>, <y>)`. Don't forget to use the doxygen documentation (in SGDK _doc_ folder) when you are looking for help on a specific function. SGDK organizes its functions per unit, for instance SYS_xx methods are declared in sys.h unit, JOY_xx in joy.h unit, helping you to find them more easily... 
+Printing on screen is a VDP task so you need to call `VDP_drawText(<your_text>, <x>, <y>)`.<br>
+> Don't forget to use the doxygen documentation (in SGDK _doc_ folder) when you are looking for help on a specific function. SGDK organizes its functions per unit, for instance SYS_xx methods are declared in sys.h unit, JOY_xx in joy.h unit, helping you to find them more easily... 
 Ok so if you correctly read the `VDP_drawText(<your_text>, <x>, <y>)` documentation you know that _x_ and _y_ parameters are in tile unit with 1 tile = 8 pixels.
 
 ```

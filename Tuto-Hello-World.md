@@ -9,8 +9,8 @@ int main(u16 hard)
 }
 ```
 
-As any C program this function is your starting point and is automatically called on start up.
-Note that with SGDK, your `main` function receive a single parameter named `hard` which allow to know if you are on a hard reset (hard = 1 mean that we just turned the system ON) or on a soft reset (hard = 0 mean that reset button was pressed).
+As any C program this function is your starting point and is automatically called on start up.<br>
+Note that with SGDK (and this is specific to SGDK), your `main` function receive a single parameter named `hard` which allow to know if you are on a hard reset (hard = 1 mean that we just turned the system ON) or on a soft reset (hard = 0 mean that reset button was pressed).
 
 Before calling ```main``` method, SGDK initializes several things for you:
   * clear RAM and initialize variables
@@ -27,7 +27,7 @@ Now if you want to use VDP, input, sprite or whatever function from SGDK, you fi
 
 Let's see that by replicating the infamous _**Hello World**_ example :)
 
-Printing on screen is a VDP task so you need to call `VDP_drawText(<your_text>, <x>, <y>)`. Don't forget to use the doxygen documentation (in _doc_ folder) when you are looking for help on a specific function, SGDK organizes its functions per unit, for instance SYS_xx methods are declared in sys.h unit, JOY_xx in joy.h unit... 
+Printing on screen is a VDP (Video Display Processor) task so you need to call `VDP_drawText(<your_text>, <x>, <y>)`. Don't forget to use the doxygen documentation (in SGDK _doc_ folder) when you are looking for help on a specific function. SGDK organizes its functions per unit, for instance SYS_xx methods are declared in sys.h unit, JOY_xx in joy.h unit, helping you to find them more easily... 
 Ok so if you correctly read the `VDP_drawText(<your_text>, <x>, <y>)` documentation you know that _x_ and _y_ parameters are in tile unit with 1 tile = 8 pixels.
 
 ```

@@ -95,6 +95,6 @@ int main(u16 hard)
 }
 ```
 
-Congratulations ! You're now ready to make a little more :)
+Congratulations ! You're now ready to make a little more! :)
 
 Download: [Sample Hello World project](files/tut1_HelloWorld.zip)

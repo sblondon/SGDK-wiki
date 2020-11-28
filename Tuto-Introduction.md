@@ -11,7 +11,7 @@ These basic tutorials aim to give you the basis to start developing on the Sega 
 <br>
 Another important point to know is that **you have a doxygen in the _'doc'_ folder of SGDK giving you a description for all SGDK functions and structures**, so always dig in the doxygen (or in the SGDK _.h_ files as the doxygen is created from them) when you want to know what a specific function does as these tutorials will only show you how to use some of them.<br>
 <br>
-You should also check the **_sample_ folder** from SGDK and in particular the **[sprite sample](https://github.com/Stephane-D/SGDK/tree/master/sample/sprite)** which is a good showcase of SGDK functions.
+You should also check the **'sample' folder** from SGDK and in particular the **[sprite sample](https://github.com/Stephane-D/SGDK/tree/master/sample/sprite)** which is a good showcase of SGDK functions.
 
 
 If you feel ready then you can continue on the [Hello World tutorial](Tuto-Hello-World) !

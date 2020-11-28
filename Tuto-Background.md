@@ -13,7 +13,7 @@ So let's see how that works..
   `MAP bga_map "gfx/S1_GHZ1_FG.png" bga_tileset BEST`<br>
   As you can see, _MAP_ resource requires the _TILESET_ resource to be defined first (_bga_tileset_ here), we did that way so you can share your _TILESET_ resource with several _MAP_ resources.
 * Then on code part, you need to create your _Map_ object from the MapDefinition (generated from _MAP_ resource):<br>
-  `Map* bga = MAP_create(&bga_map, BG_A, TILE_ATTR_FULL(0, FALSE, FALSE, FALSE, bgBaseTileIndex[0]));<br>
+  `Map* bga = MAP_create(&bga_map, BG_A, TILE_ATTR_FULL(0, FALSE, FALSE, FALSE, bgBaseTileIndex[0]));`<br>
   Note than if you used compression for your MAP resource SGDK will need to unpack it in memory so be sure to have enough memory for that first. If the map is too large to fit in memory unpacked, then just do not compress it in the _MAP_ resource definition.
 * Now you created the Map object, you can just use `MAP_scrollTo(bga, x, y)` to scroll your background at the specified _x_, _y_ position :)
 

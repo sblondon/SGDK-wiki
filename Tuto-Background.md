@@ -1,5 +1,3 @@
-SGDK provides 2 API to handle _Background_
-
 ### High Level API: MAP ###
 
 This is the API you should use by default as it's easy to use and allow to handle large background map.<br>

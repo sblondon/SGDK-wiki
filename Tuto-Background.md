@@ -26,6 +26,7 @@ And that is ! You don't need more than that to actually get your background plan
 If you want more control on your backgrounds, you may eventually use the lower level API (all methods starting with _VDP__) but SGDK doesn't provide efficient resource type to encode large backgrounds using the low level API, it's up to you to find solutions for that.
 
 WARNING: The following tutorial is terribly outdated (a bunch of constants / methods have been renamed). Also the presented methods are just to help understanding how it works under the hood but it's highly recommended to use the _IMAGE_ resource to define your graphical data and use `VDP_loadTileSet(..)` and `VDP_setTileMapxx(..)` methods to work with them.<br>
+<br>
 **We will work a proper tutorial about it later, right now it's better to stick with high level API or read others SGDK tutorials explaining how to use _IMAGE_ resource.**
 
 ----------------------

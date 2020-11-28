@@ -1,4 +1,4 @@
-### High Level API (new): MAP ###
+## High Level API (new): MAP ##
 
 **This is the API you should use by default as it's easy to use and allow to handle large background map.<br>**
 <br>
@@ -19,7 +19,7 @@ So let's see how that works..
 
 And that is ! You don't need more than that to actually get your background plan scrolling.
 
-### Low Level API: Image, TileSet and TileMap ###
+## Low Level API: TileMap ##
 
 If you want more control on your backgrounds, you may eventually use the lower level API (all methods starting with _VDP__) but SGDK doesn't provide efficient resource type to encode large backgrounds using the low level API, it's up to you to find solutions for that.
 

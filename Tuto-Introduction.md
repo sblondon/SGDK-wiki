@@ -9,6 +9,6 @@ It's also important to have, at least, a basic knowledge about the _Sega Mega Dr
 ### Purpose ###
 These basic tutorials aim to give you the basis to start developing on the Sega Genesis / Mega Drive using SGDK, they will help you understanding how SGDK work and how to use it efficiently but **they do not aim to learn you C language programming nor to explain you how the Sega Mega Drive works internally** so take attention to the disclaimer.<br>
 <br>
-Another important point to know is that **you have a doxygen in the _doc_ folder of SGDK giving you a description for all SGDK functions and structures**, so always dig in the doxygen (or in the SGDK .h files as the doxygen is created from them) when you want to know what a specific function does as these tutorials will only show you how to use some of them.
+Another important point to know is that **you have a doxygen in the _'doc'_ folder of SGDK giving you a description for all SGDK functions and structures**, so always dig in the doxygen (or in the SGDK .h files as the doxygen is created from them) when you want to know what a specific function does as these tutorials will only show you how to use some of them.
 
 If you feel ready then you can continue on the [Hello World tutorial](Tuto-Hello-World) !

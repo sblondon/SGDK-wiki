@@ -13,7 +13,7 @@
 
   1. **[Introduction](Tuto-Introduction)**
   1. **[Hello World example](Tuto-Hello-World)**
-  1. **[Input](Tuto-Input)**
   1. **[Tile and tilemap](Tuto-Background)**
   1. **[Sprites](Tuto-Sprites)**
+  1. **[Input](Tuto-Input)**
   1. **[SGDK and Maths](Tuto-Maths)**

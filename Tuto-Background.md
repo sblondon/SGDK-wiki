@@ -13,7 +13,7 @@ So let's see how that works..
   `MAP bga_map "gfx/S1_GHZ1_FG.png" bga_tileset BEST`<br>
   As you can see, _MAP_ resource requires the _TILESET_ resource to be defined first (_bga_tileset_ here), we did that way so you can share your _TILESET_ resource with several _MAP_ resources.
 * Then on code part, you need to create your _Map_ object from the MapDefinition (generated from _MAP_ resource):<br>
-  ```Map* bga = MAP_create(&bga_map, BG_A, TILE_ATTR_FULL(0, FALSE, FALSE, FALSE, bgBaseTileIndex[0]));```<br>
+  `Map* bga = MAP_create(&bga_map, BG_A, TILE_ATTR_FULL(0, FALSE, FALSE, FALSE, bgBaseTileIndex[0]));`<br>
   Note than if you used compression for your MAP resource SGDK will need to unpack it in memory so be sure to have enough memory for that first. If the map is too large to fit in memory unpacked, then just do not compress it in the _MAP_ resource definition.
 * Now you created the Map object, you can just use `MAP_scrollTo(bga, x, y)` to scroll your background at the specified _x_, _y_ position :)
 * When you're done with the _Map_ just use `MEM_free(map)` to release it.
@@ -22,9 +22,11 @@ And that is ! You don't need more than that to actually get your background plan
 
 ### Lowh Level API: TileMap ###
 
-If you want more control on your background, you may eventually use the lower level API (all methods starting with _VDP__
+If you want more control on your background, you may eventually use the lower level API (all methods starting with _VDP__) but SGDK doesn't provide efficient resource to encode large backgrounds using the low level API, it's up to you to find solutions for that.
 
-WARNING: A bunch of constants have been renamed after commit: https://github.com/Stephane-D/SGDK/commit/c1ce6edbefa4eddc709aec24af0aec9fbe5df84f 
+WARNING: The following tutorial is terribly outdated (a bunch of constants / methods have been renamed). Also the presented methods are just to help understanding how it works under the hood but it's highly recommended to use the _IMAGE_ resource to define your graphical data and use `VDP_loadTileSet(..)` and `VDP_setTileMapxx(..)` methods to work with them. We will work a proper tutorial about it later, right now it's better to stick with high level API or read others SGDK tutorials explaining how to use _IMAGE_ resource.
+
+----------------------
 
 If you read documents linked on [first part](Tuto-Hello-World), you should know how to write more than 'Hello World' on screen :
   * the Genny redraws 2 planes on refresh (+ a third one for the sprites)

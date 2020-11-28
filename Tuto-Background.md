@@ -16,9 +16,13 @@ So let's see how that works..
   `Map* bga = MAP_create(&bga_map, BG_A, TILE_ATTR_FULL(0, FALSE, FALSE, FALSE, bgBaseTileIndex[0]));`<br>
   Note than if you used compression for your MAP resource SGDK will need to unpack it in memory so be sure to have enough memory for that first. If the map is too large to fit in memory unpacked, then just do not compress it in the _MAP_ resource definition.
 * Now you created the Map object, you can just use `MAP_scrollTo(bga, x, y)` to scroll your background at the specified _x_, _y_ position :)
+* When you're done with the _Map_ just use `MEM_free(map)` to release it.
 
+And that is ! You don't need more than that to actually get your background plan scrolling.
 
-which It's highly recommended to use MAP this We highly recommend This is the recommended API Using the MAP resource
+### Lowh Level API: TileMap ###
+
+If you want more control on your background, you may eventually use the lower level API (all methods starting with _VDP__
 
 WARNING: A bunch of constants have been renamed after commit: https://github.com/Stephane-D/SGDK/commit/c1ce6edbefa4eddc709aec24af0aec9fbe5df84f 
 

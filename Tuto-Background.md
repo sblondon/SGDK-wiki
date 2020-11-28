@@ -3,19 +3,24 @@ SGDK provides 2 API to handle _Background_
 ### High Level API: MAP ###
 
 This is the API you should use by default as it's easy to use and allow to handle large background map.<br>
-Internally it uses the _MAP_ resource which is optimized to encode large background level data using limited ROM place.
+Internally it uses the _MAP_ resource (compiled as _MapDefinition_) which is optimized to encode large background level data using limited ROM place.
 You can find more info about _MAP_ resource in [rescomp.txt file](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt)).<br>
 <br>
 So let's see how that works..
 
-* Define the _MAP_ resource which represents your complete level background:
+* First you need to define the _MAP_ resource representing your level background:
 
 `TILESET bga_tileset "gfx/S1_GHZ1_FG.png" BEST ALL`
 `MAP bga_map "gfx/S1_GHZ1_FG.png" bga_tileset BEST`
 
 As you can see, _MAP_ resource requires the _TILESET_ resource to be defined first (_bga_tileset_ here), we did that way so you can share your _TILESET_ resource with several _MAP_ resources.
 
-1. Then when your _MAP_ resource is properly defined, you need to use _MAP_xx_ methods to deal with it.
+* Then on code part, you need to create your _Map_ object from the MapDefinition (generated from _MAP_ resource):
+`Map* bga = MAP_create(&bga_map, BG_A, TILE_ATTR_FULL(0, FALSE, FALSE, FALSE, bgBaseTileIndex[0]));
+
+Note than if you used compression for your MAP resource SGDK will need to unpack it in memory so be sure to have enough memory for that first. If the map is too large to fit in memory unpacked, then just do not compress it in the _MAP_ resource definition.
+
+* Now you created the Map object, you can just use `MAP_scrollTo(bga, x, y)` to scroll your background at the specified _x_, _y_ position :)
 
 
 which It's highly recommended to use MAP this We highly recommend This is the recommended API Using the MAP resource

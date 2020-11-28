@@ -7,21 +7,21 @@ SGDK uses a generic makefile to compile project. In order to be properly recogni
 * **out** = output files (will be created automatically)<br>
 
 where
-  * source files can be .c (C source file), .s (68k assembly source file) or .s80 (Z80 assembly source file)
-  * include files can be .h (C include file) or .inc (assembly include file)
-  * primary resource files should be .res (resource definition file compiled by _rescomp_ tool, see [bin/rescomp.txt](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt) file)
-  * others resources files can be located anywhere while you are referring them correctly in your .res file.
-    * .bmp = image file (indexed colors only)
-    * .png = image file (indexed colors only)
-    * .vgm = VGM music dump file (Megadrive only)
-    * .xgm = XGM music file
-    * .wav = WAV sound file (used for SFX)
-    * .bin = binary data file
-    * .c = C source file
-    * .s = 68k assembly source file
+  * source files can be _.c_ (C source file), _.s_ (68k assembly source file) or _.s80_ (Z80 assembly source file)
+  * include files can be _.h_ (C include file) or _.inc_ (assembly include file)
+  * primary resource files should be _.res_ (resource definition file compiled by _rescomp_ tool, see [bin/rescomp.txt](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt) file)
+  * others resources files can be located anywhere while you are referring them correctly in your _.res_ file.
+    * _.bmp_ = image file (indexed colors only)
+    * _.png_ = image file (indexed colors only)
+    * _.vgm_ = VGM music dump file (Megadrive only)
+    * _.xgm_ = XGM music file
+    * _.wav_ = WAV sound file (used for SFX)
+    * _.bin_ = binary data file
+    * _.c_ = C source file
+    * _.s_ = 68k assembly source file
 
 You can read the [bin/rescomp.txt](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt) file to have more information about supported resource files.
-Note that SGDK supports sub-folder for sources, up to 2 depth levels (for instance: src/engine/enemy/enemy_fly.c)
+Note that SGDK supports sub-folder for sources, up to 2 depth levels (for instance: _src/engine/enemy/enemy_fly.c_)
 
 **Then to compile your project you need to use the following command directly from your project folder:**
 <pre>%GDK_WIN%\bin\make -f %GDK_WIN%\makefile.gen</pre>

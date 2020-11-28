@@ -1,4 +1,4 @@
-### High Level API: MAP ###
+### (New) High Level API: MAP ###
 
 This is the API you should use by default as it's easy to use and allow to handle large background map.<br>
 Internally it uses the _MAP_ resource (compiled as _MapDefinition_) which is optimized to encode large background level data using limited ROM place.

@@ -21,6 +21,7 @@ where
     * .s = 68k assembly source file
 
 You can read the [bin/rescomp.txt](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt) file to have more information about supported resource files.
+Note that SGDK supports sub-folder for sources, up to 2 depth levels (for instance: src/engine/enemy/enemy_fly.c)
 
 **Then to compile your project you need to use the following command directly from your project folder:**
 <pre>%GDK_WIN%\bin\make -f %GDK_WIN%\makefile.gen</pre>

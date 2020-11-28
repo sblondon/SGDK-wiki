@@ -3,10 +3,11 @@ SGDK provides 2 API to handle _Background_
 ### High Level API: MAP ###
 
 This is the API you should use by default as it's easy to use and allow to handle large background map.
-Internally it uses the _MAP_ resource which is optimized to encode large background level data with minimum ROM place (you can find more info about it in [rescomp.txt file](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt)).
+Internally it uses the _MAP_ resource which is optimized to encode large background level data with minimum ROM place (you can find more info about it in [rescomp.txt file](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt)).<br>
+<br>
+So let's see how that works !
 
-1. So first you need to define your _MAP_ resource which represents a complete level background.
-Here's an example (taken from _sprite_ sample):
+* Define the _MAP_ resource which represents your complete level background:
 
 `TILESET bga_tileset "gfx/S1_GHZ1_FG.png" BEST ALL`
 `MAP bga_map "gfx/S1_GHZ1_FG.png" bga_tileset BEST`

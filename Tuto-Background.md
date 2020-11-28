@@ -2,10 +2,11 @@ SGDK provides 2 API to handle _Background_
 
 ### High Level API: MAP ###
 
-This is the API you should use by default as it's easy to use and allow to handle large background map.
-Internally it uses the _MAP_ resource which is optimized to encode large background level data with minimum ROM place (you can find more info about it in [rescomp.txt file](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt)).<br>
+This is the API you should use by default as it's easy to use and allow to handle large background map.<br>
+Internally it uses the _MAP_ resource which is optimized to encode large background level data using limited ROM place.
+You can find more info about _MAP_ resource in [rescomp.txt file](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt)).<br>
 <br>
-So let's see how that works !
+So let's see how that works..
 
 * Define the _MAP_ resource which represents your complete level background:
 

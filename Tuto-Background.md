@@ -8,7 +8,7 @@ You can find more info about _MAP_ resource in [rescomp.txt file](https://raw.gi
 <br>
 So let's see how that works..
 
-* First you need to define the _MAP_ resource representing your level background:
+* First you need to define the _MAP_ resource representing your level background:<br>
   `TILESET bga_tileset "gfx/S1_GHZ1_FG.png" BEST ALL`
   `MAP bga_map "gfx/S1_GHZ1_FG.png" bga_tileset BEST`
   As you can see, _MAP_ resource requires the _TILESET_ resource to be defined first (_bga_tileset_ here), we did that way so you can share your _TILESET_ resource with several _MAP_ resources.

@@ -13,7 +13,7 @@ So let's see how that works..
 * Then on code part, if not already done, don't forget to initialize the _Sprite Engine_ using `SPR_init()`
 
 * After that, create/add your sprite from the SpriteDefinition (generated from _SPRITE_ resource):<br>
-  `Sprite* player = SPR_addSprite(&sonic_sprite, fix32ToInt(posX) - camPosX, fix32ToInt(posY) - camPosY, TILE_ATTR(PAL0, TRUE, FALSE, FALSE));`
+  `Sprite* player = SPR_addSprite(&sonic_sprite, fix32ToInt(posX) - camPosX, fix32ToInt(posY) - camPosY, TILE_ATTR(PAL0, TRUE, FALSE, FALSE));`<br>
   Be careful with compression on _SPRITE_ resource, for streamed sprite (which is the default) don't use _BEST_ compression as it's too slow, and only use _FAST_ compression when it's really useful (main character with many animation for instance) as it's taxing on CPU.
 
 * Now you have your Sprite object you can move it, flip it, hide it, change its animation / frame.. using these methods:

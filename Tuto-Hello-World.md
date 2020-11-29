@@ -96,9 +96,9 @@ int main(u16 hard)
 ```
 
 **Important note:** Since SGDK 1.6, all automatic SGDK tasks done during Vertical Blank period (using the Vertical Interrupt handler) were moved in `SYS_doVBlankProcess()` function. This was done to reduce risk of bugs from missing `SYS_disableInts() / SYS_enableInts()` in your code and make coding in SGDK a bit less painful. That also let more flexibility to developers about how to handle that.
-Prior to SGDK 1.6 you needed to protect any VDP access from the main loop in order to prevent conflicts with VDP access done from V-Int (i.e. when V-Int occurs, SGDK V-Int process can interrupt and corrupt your VDP processing if it wasn't properly protected using SYS_disableInts() / SYS_enableInts()). And the resulting bugs from these VDP conflicts accesses were very unpredictables and quite difficult to trace so it's a good thing to get rid of them...<br>
+Prior to SGDK 1.6 you needed to protect any VDP access from the main loop in order to prevent conflicts with VDP access done from V-Int (i.e. when V-Int occurs, SGDK V-Int process can interrupt and corrupt your VDP processing if it wasn't properly protected using SYS_disableInts() / SYS_enableInts()). And the resulting bugs from these VDP conflicts accesses were very unpredictables and quite difficult to trace so it's a good thing to get rid of them<br>
 
-**So instead of using VDP_waitVSync(), you now need to call directly SYS_doVBlankProcess().** The method will actually wait for VSync internally then process all SGDK VBlank tasks that was done before from V-Int.
+**So instead of using VDP_waitVSync(), now you need to directly call SYS_doVBlankProcess().** The method will actually wait for VSync internally before processing all SGDK VBlank tasks that was done before from V-Int.
 
 So here's the final version you need to use starting with SGDK 1.6:
 ```

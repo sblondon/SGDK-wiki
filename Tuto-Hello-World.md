@@ -100,7 +100,28 @@ Prior to SGDK 1.6 you needed to protect any VDP access from the main loop in ord
 
 **So instead of using VDP_waitVSync(), you now need to call directly SYS_doVBlankProcess().** The method will actually wait for VSync internally then process all SGDK VBlank tasks that was done before from V-Int.
 
-Here
+So here's the final version you need to use starting with SGDK 1.6:
+```
+#include <genesis.h>
+
+int main(u16 hard)
+{
+    VDP_drawText("Hello Genny World!", 10, 13);
+
+    while(TRUE)
+    {
+        // read input
+        // move sprite
+        // update score
+        // draw current screen (logo, start screen, settings, game, gameover, credits...)
+
+        // wait for screen refresh and do all SGDK VBlank tasks
+        SYS_doVBlankProcess();
+    }
+
+    return 0;
+}
+```
 
 Congratulations ! You're now ready to make a little more! :)
 

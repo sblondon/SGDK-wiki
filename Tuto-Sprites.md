@@ -1,7 +1,55 @@
+## High Level API: Sprite Engine ##
+
+**This is the API you should use by default as it's much easier to use than lower level API and should work for almost all situation.<br>**
+This said, the only case where low level may be preferable is when you have lot of (small) sprites and that performance start to be a problem.<br>
+<br>
+Internally the _Sprite Engine_ uses the _SPRITE_ resource (compiled as _SpriteDefinition_) which is basically a sprite sheet where each row represent an different animation and cell represent each animation frame.
+You can find more info about _SPRITE_ resource in [rescomp.txt file](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt)).<br>
+<br>
+So let's see how that works..
+
+* First you need to define the _SPRITE_ resource (_.res file) representing your complete sprite sheet (see the [sprite sample](https://github.com/Stephane-D/SGDK/tree/master/sample/sprite) example):
+  `SPRITE sonic_sprite "sprite/sonic.png" 6 6 FAST 5`
+
+* Then on code part, if not already done, don't forget to initialize the _Sprite Engine_ using `SPR_init()`
+
+* After that, create/add your sprite from the SpriteDefinition (generated from _SPRITE_ resource):<br>
+  `Sprite* player = SPR_addSprite(&sonic_sprite, fix32ToInt(posX) - camPosX, fix32ToInt(posY) - camPosY, TILE_ATTR(PAL0, TRUE, FALSE, FALSE));`
+  Be careful with compression on _SPRITE_ resource, for streamed sprite (which is the default) don't use _BEST_ compression as it's too slow, and only use _FAST_ compression when it's really useful (main character with many animation for instance) as it's taxing on CPU.
+
+* Now you have your Sprite object you can move it, flip it, hide it, change its animation / frame.. using these methods:
+  * `SPR_setPosition(Sprite* sprite, s16 x, s16 y);`
+  * `SPR_setHFlip(Sprite* sprite, u16 value);`
+  * `SPR_setVisibility(Sprite* sprite, SpriteVisibility value);`
+  * `SPR_setAnimAndFrame(Sprite* sprite, s16 anim, s16 frame);`
+  * `SPR_setFrame(Sprite* sprite, s16 frame);`
+  * `SPR_nextFrame(Sprite* sprite);`
+
+* You can also change sprite setting or behavior (VRAM, sprite allocation, delayed update, tile upload..) using these methods:
+  * `SPR_setVRAMTileIndex(Sprite* sprite, s16 value);`
+  * `SPR_setSpriteTableIndex(Sprite* sprite, s16 value);`
+  * `SPR_setAutoTileUpload(Sprite* sprite, bool value);`
+  * `SPR_setDelayedFrameUpdate(Sprite* sprite, bool value);`
+  * `SPR_setFrameChangeCallback(Sprite* sprite, FrameChangeCallback* callback);`
+
+* At the end, when you modified all your sprites positions / frame index.. you need to simply call `SPR_update()` to apply the changes.
+
+* Remove / delete your sprite using `SPR_releaseSprite(sprite)`
+
+And that is :) There is more to learn about the _Sprite Engine_ but you have the basics to start playing with it. Don't hesitate to browse the _spr_eng.h_ file to see all available methods and read theirs description, that will help you for sure.
+
+## Low Level API: VDP_spr ##
+
+The 'Sprite Engine' makes sprites management much easier and still give you a lot of control in the way you can handle them (streamed, fixed location, pre-loaded, depth, delayed update, frame change callback..). But this comes at a price: performance. When you have many sprites it starts to consume a lot of CPU time... So, in certain situations, specially when you have lot of sprite to handle and that you don't need metasprite, it may be better to manage them the hard way using the low level API (_VDP_spr_ unit).
+
+WARNING: **The following tutorial is outdated and mat not be 100% accurate regarding the recent changes in SGDK.
+It will be updated soon...**
+
+----------------------
+
 ## Sprites ##
 
-__Warning: This tutorial is outdated and mat not be 100% accurate regarding the recent changes in SGDK.
-It will be updated soon...__
+__Warning:
 
 If you read documents linked on [first part](Tuto-background), you should know the main difference between tiles for sprites and tiles for planes :
   * the plane draws the tiles from left to right THEN top to bottom (ie row order)

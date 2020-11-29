@@ -42,7 +42,7 @@ Be sure to check the _[sprite sample](https://github.com/Stephane-D/SGDK/tree/ma
 
 ## Low Level API: VDP_spr ##
 
-The _Sprite Engine_ makes sprites management much easier and still give you a lot of control in the way you can handle them (streamed, fixed location, pre-loaded, depth, delayed update, frame change callback..). But this comes at a price: performance. When you have many sprites it starts to consume a lot of CPU time... So, in certain situations, specially when you have lot of sprite to handle and that you don't need metasprite, it may be better to manage them the hard way using the low level API (_VDP_spr_ unit).
+The _Sprite Engine_ makes sprites management much easier and still give you a lot of control in the way you can handle them (streamed, fixed location, pre-loaded, depth, delayed update, frame change callback..). But this comes at a price: speed. When you have many sprites the _Sprite Engine_ starts to consume a lot of CPU time so in certain situations, specially when you have lot of sprite to handle and that you don't need any meta-sprite, it may be better to manage them the hard way using the low level API (_VDP_spr_ unit).
 
 WARNING: **The following tutorial is outdated and mat not be 100% accurate regarding the recent changes in SGDK.
 It will be updated soon...**

@@ -31,7 +31,9 @@ So let's see how that works..
   * `SPR_setDelayedFrameUpdate(Sprite* sprite, bool value);`
   * `SPR_setFrameChangeCallback(Sprite* sprite, FrameChangeCallback* callback);`
 
-* At the end, when you modified all your sprites positions / frame index.. you need to simply call `SPR_update()` to apply the changes.
+* At the end, when you modified all your sprites positions / frame index.. you need to simply call:<br>
+ `SPR_update()`<br>
+  to apply the changes.
 
 * Remove / delete your sprite using `SPR_releaseSprite(sprite)`
 

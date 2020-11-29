@@ -2,7 +2,7 @@
 
 **This is the API you should use by default as it's much easier to use than lower level API and should work for almost all situation.** This said, the only case where low level may be preferable is when you have lot of (small) sprites and that performance start to be a problem (see in Low Level API part).<br>
 <br>
-Internally the _Sprite Engine_ uses the _SPRITE_ resource (compiled as _SpriteDefinition_) which is basically a sprite sheet where each row represent an different animation and cell represent each animation frame.
+Internally the _Sprite Engine_ uses the _SPRITE_ resource (compiled as _SpriteDefinition_) which is basically a sprite sheet where each row represents an animation and cell represents a single animation frame.
 You can find more info about _SPRITE_ resource in [rescomp.txt file](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt)).<br>
 <br>
 So let's see how that works..

@@ -124,5 +124,4 @@ int main(u16 hard)
 ```
 
 Congratulations ! You're now ready to make a little more! :)
-
-Download: [Sample Hello World project](files/tut1_HelloWorld.zip)
+Try playing with other topics accessible from the right side bar !

@@ -35,7 +35,8 @@ So let's see how that works..
 
 * Remove / delete your sprite using `SPR_releaseSprite(sprite)`
 
-And that is :) There is more to learn about the _Sprite Engine_ but you have the basics to start playing with it. Don't hesitate to browse the _spr_eng.h_ file to see all available methods and read theirs description, that will help you for sure.
+And that is :) There is more to learn about the _Sprite Engine_ but you have the basics to start playing with it. 
+Be sure to check the _[sprite sample](https://github.com/Stephane-D/SGDK/tree/master/sample/sprite)_ which is a good example about how use the Sprite Engine. Also don't hesitate to browse the _[spr_eng.h](https://github.com/Stephane-D/SGDK/blob/master/inc/sprite_eng.h)_ file to see all available methods and read theirs description, that will help you for sure.
 
 ## Low Level API: VDP_spr ##
 

@@ -14,7 +14,7 @@ So let's see how that works..
 
 * Then on code part, you need to create your _Map_ object from the MapDefinition (generated from _MAP_ resource):<br>
   `Map* bga = MAP_create(&bga_map, BG_A, TILE_ATTR_FULL(0, FALSE, FALSE, FALSE, TILE_USER_INDEX));`<br>
-  Note than if you used compression for your MAP resource SGDK will need to unpack it in memory so be sure to have enough memory for that first. If the map is too large to fit in memory unpacked, then just do not compress it in the _MAP_ resource definition.
+  Note than if you used compression for your MAP resource SGDK will need to unpack it in memory so be sure to have enough memory for that first. If the map is too large to fit in memory unpacked, then just disable compression on _MAP_ resource definition.
 
 * Now you created the Map object, you can just use `MAP_scrollTo(bga, x, y)` to scroll your background at the specified _x_, _y_ position :)
 * When you're done with the _Map_ just use `MEM_free(map)` to release it.

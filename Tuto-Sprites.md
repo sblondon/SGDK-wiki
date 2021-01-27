@@ -38,22 +38,22 @@ So let's see how that works..
 * When you don't need it anymore, you can remove / delete your sprite using `SPR_releaseSprite(sprite)`
 
 And that is :) There is more to learn about the _Sprite Engine_ but you have the basics to start playing with it.<br>
-Be sure to check the _[sprite sample](https://github.com/Stephane-D/SGDK/tree/master/sample/sprite)_ which is a good example about how use the Sprite Engine. Also don't hesitate to browse the _[spr_eng.h](https://github.com/Stephane-D/SGDK/blob/master/inc/sprite_eng.h)_ file to see all available methods and read theirs description, that will help you for sure.
+Be sure to check the _[sonic sample](https://github.com/Stephane-D/SGDK/tree/master/sample/sonic)_ which is a good example about how use the Sprite Engine. Also don't hesitate to browse the _[spr_eng.h](https://github.com/Stephane-D/SGDK/blob/master/inc/sprite_eng.h)_ file to see all available methods and read theirs description, that will help you for sure.
 
 ## Low Level API: VDP_spr ##
 
 The _Sprite Engine_ makes sprites management much easier and still give you a lot of control in the way you can handle them (streamed, fixed location, pre-loaded, depth, delayed update, frame change callback..). But this comes at a price: speed. When you have many sprites the _Sprite Engine_ starts to consume a lot of CPU time so in certain situations, specially when you have lot of sprite to handle and that you don't need any meta-sprite, it may be better to manage them the hard way using the low level API (_VDP_spr_ unit).
 
-WARNING: **The following tutorial is outdated and mat not be 100% accurate regarding the recent changes in SGDK.
-It will be updated soon...**
+**WARNING**
+The following tutorial is outdated and mat not be 100% accurate regarding the recent changes in SGDK.
+It will be updated soon...
 
 ----------------------
 
 ## Sprites ##
 
-__Warning:
-
-If you read documents linked on [first part](Tuto-background), you should know the main difference between tiles for sprites and tiles for planes :
+**WARNING**
+If you read documents linked on [first part](Tuto-background), you should know the main difference between tiles for sprites and tiles for planes:
   * the plane draws the tiles from left to right THEN top to bottom (ie row order)
   * the sprite draws the tiles from top to bottom THEN left to right (ie column order)
 

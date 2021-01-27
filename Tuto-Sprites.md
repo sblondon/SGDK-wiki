@@ -7,7 +7,7 @@ You can find more info about _SPRITE_ resource in [rescomp.txt file](https://raw
 <br>
 So let's see how that works..
 
-* First you need to define the _SPRITE_ resource (_.res file) representing your complete sprite sheet (see the [sprite sample](https://github.com/Stephane-D/SGDK/tree/master/sample/sprite) example):<br>
+* First you need to define the _SPRITE_ resource (_.res file) representing your complete sprite sheet (see the [sonic sample](https://github.com/Stephane-D/SGDK/tree/master/sample/sonic) example):<br>
   `SPRITE sonic_sprite "sprite/sonic.png" 6 6 FAST 5`
 
 * Then on code part, if not already done, don't forget to initialize the _Sprite Engine_ using `SPR_init()`

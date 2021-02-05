@@ -25,8 +25,8 @@ Note that SGDK supports sub-folder for sources, up to 2 depth levels (for instan
 
 **The makefile supports 3 different profiles:**
 * _release_ (default) --> release / optimized build
-* _debug _--> debug build containing symbols and displaying errors in Gens KMod log (see [Tuto Introduction](https://github.com/Stephane-D/SGDK/wiki/Tuto-Introduction) page)
-* _asm _--> used to generate assembly listing
+* _debug _ --> debug build containing symbols and displaying errors in Gens KMod log (see [Tuto Introduction](https://github.com/Stephane-D/SGDK/wiki/Tuto-Introduction) page)
+* _asm _ --> used to generate assembly listing
 
 **So to compile your project you need to use the following command directly from your project folder:**
 <pre>%GDK_WIN%\bin\make -f %GDK_WIN%\makefile.gen</pre>

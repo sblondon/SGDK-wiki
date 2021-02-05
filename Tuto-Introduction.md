@@ -13,4 +13,19 @@ Before starting you should now that **you have a doxygen in the _'doc'_ folder o
 <br>
 Another important point to know is that **SGDK heavily relies on _resources_** which are compiled through _rescomp_ tool. You can read the [rescomp.txt](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt) file to know which kind of resource you can use and how to declare them then you can check the **_'sample'_ folder from SGDK and in particular the [sonic sample](https://github.com/Stephane-D/SGDK/tree/master/sample/sonic)** which is a good showcase of SGDK usage in general (functions and resources).
 
+### Debugging ###
+Debugging is always an issue when you're developing on those old systems. Unfortunately emulators supposed to support GDB - _the GNU debugger_ - doesn't seem to have complete support of it, at least i was never able to use it correctly (it never worked with BalstEm and support in Gens KMod is somehow broken as it doesn't correctly trace execution after a breakpoint).
+
+Fortunately you still have [Gens KMod](https://segaretro.org/Gens_KMod), this emulator supports some advanced debugging features and one of it is really useful: the message log capability.<br>
+But before begin able to use it, you need to enable the option in the _Options --> Debug..._ dialog:
+![Gens KMod - active debug features](https://github.com/Stephane-D/SGDK/wiki/images/gensKMod_02)
+
+Then you can use the KLog_xx(..) methods from SGDK to log messages / values to the Debug Message dialog (_CPU --> Debug --> Messages_ menu):
+![Gens KMod - log example](https://github.com/Stephane-D/SGDK/wiki/images/gensKMod_03)
+
+This will really help you in examining what if a specific action happen or see variable values for instance. Not as convenient than real GDB debugging but better than nothing :)
+
+The problem of Gens Kmod is that it has some flaws, first it has some bugs / memory leaks and secondly it's quite inaccurate in general so always test on more accurate emulators when possible (as [BlastEm](https://www.retrodev.com/blastem/)).
+Another good emulator for its debugging features is [Regen Debug version](https://retrocdn.net/images/2/24/Regen0972D.7z), while not being as accurate then BlastEm, it's still much better then Gens KMod in that aspect and it offers some exclusive debugging features.
+
 If you feel ready then you can continue on the [Hello World tutorial](Tuto-Hello-World) !

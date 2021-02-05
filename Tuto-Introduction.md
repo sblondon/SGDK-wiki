@@ -17,10 +17,10 @@ Another important point to know is that **SGDK heavily relies on _resources_** w
 Debugging is always an issue when you're developing on those old systems. Unfortunately emulators supposed to support GDB - _the GNU debugger_ - doesn't seem to have complete support of it, at least i was never able to use it correctly with working breakpoints and execution stepping. If someone was able to sort it out and got it working correctly then i would be really interested in knowing the process :)
 
 Hopefully you still have [Gens KMod](https://segaretro.org/Gens_KMod), this emulator supports some advanced debugging features and one of it is really useful: the message log capability.<br> **Before being able to use it, you need to enable the option **in the _Options --> Debug..._ dialog:
-![Gens KMod - active debug features](https://github.com/Stephane-D/SGDK/wiki/images/gensKMod_02)
+![Gens KMod - active debug features](https://github.com/Stephane-D/SGDK/wiki/images/gensKMod_02.jpg)
 
 Then you can use the _KLog_xx(..)_ methods from SGDK to log messages / values to the _Debug Message_ dialog (_CPU --> Debug --> Messages_ menu):
-![Gens KMod - log example](https://github.com/Stephane-D/SGDK/wiki/images/gensKMod_03)
+![Gens KMod - log example](https://github.com/Stephane-D/SGDK/wiki/images/gensKMod_03.jpg)
 
 This will really help you in examining if a specific action happened or see variable values for instance. It becomes even better when you're building in _debug_ profile (see [SGDK Usage](https://github.com/Stephane-D/SGDK/wiki/SGDK-Usage) page) as SGDK will also log some information in the _Debug Message_ dialog which may be really useful to you. You can change the SGDK log level by changing definition of _LIB_LOG_LEVEL_ in the [config.h](https://github.com/Stephane-D/SGDK/blob/master/inc/config.h) file then recompiling the library itself in _debug_ profile.
 

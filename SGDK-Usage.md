@@ -20,6 +20,8 @@ SGDK uses a generic makefile to compile project. In order to be properly recogni
     * _.c_ = C source file
     * _.s_ = 68k assembly source file
 
+***
+
 **The makefile supports 3 different profiles:**
 * _release_ (default) --> release / optimized build
 * _debug _ --> debug build containing symbols and displaying errors in Gens KMod log (see [Tuto Introduction](https://github.com/Stephane-D/SGDK/wiki/Tuto-Introduction) page)

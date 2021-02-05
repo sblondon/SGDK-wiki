@@ -1,7 +1,7 @@
 SGDK uses a generic makefile to compile project. In order to be properly recognized by the makefile you need to organize your project folder structure as following:<br>
 <br>
 **project root**<br>
-* **src** = source files (sub-folder supported up to 2 depth levels - _src/engine/enemy/enemy_fly.c_)<br>
+* **src** = source files (sub-folder supported up to 2 depth levels, ex: _src/engine/enemy/*_)<br>
 * **inc** = include files<br>
 * **res** = resource files<br>
 * **out** = output files (will be created automatically)<br>
@@ -19,9 +19,7 @@ where
     * _.bin_ = binary data file
     * _.c_ = C source file
     * _.s_ = 68k assembly source file
-
-You can read the [bin/rescomp.txt](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt) file to have more information about supported resource files.
-Note that SGDK supports 
+  You can read the [bin/rescomp.txt](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt) file to have more information about supported resource files.
 
 **The makefile supports 3 different profiles:**
 * _release_ (default) --> release / optimized build

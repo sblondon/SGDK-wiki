@@ -20,9 +20,10 @@ Hopefully you still have [Gens KMod](https://segaretro.org/Gens_KMod), this emul
 ![Gens KMod - active debug features](https://github.com/Stephane-D/SGDK/wiki/images/gensKMod_02.jpg)
 
 Then you can use the _KLog_xx(..)_ methods from SGDK to log messages / values to the _Debug Message_ dialog (_CPU --> Debug --> Messages_ menu):
-![Gens KMod - log example](https://github.com/Stephane-D/SGDK/wiki/images/gensKMod_01.jpg)
+![Gens KMod - log example](https://github.com/Stephane-D/SGDK/wiki/images/gensKMod_03.jpg)
 
 This will really help you in examining if a specific action happened or see variable values for instance. It becomes even better when you're building in _debug_ profile (see [SGDK Usage](https://github.com/Stephane-D/SGDK/wiki/SGDK-Usage) page) as SGDK will also log some information in the _Debug Message_ dialog which may be really useful to you. You can change the SGDK log level by changing definition of _LIB_LOG_LEVEL_ in the [config.h](https://github.com/Stephane-D/SGDK/blob/master/inc/config.h) file then recompiling the library itself in _debug_ profile.
+![Gens KMod - log example](https://github.com/Stephane-D/SGDK/wiki/images/gensKMod_01.jpg)
 
 It's not as convenient than real GDB debugging but still better than nothing :)
 

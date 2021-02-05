@@ -23,7 +23,7 @@ where
 You can read the [bin/rescomp.txt](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt) file to have more information about supported resource files.
 Note that SGDK supports sub-folder for sources, up to 2 depth levels (for instance: _src/engine/enemy/enemy_fly.c_)
 
-Then you need to know that the makefile supports 3 different profiles:
+**The makefile supports 3 different profiles:**
 * _release_ (default) --> release / optimized build
 * _debug _--> debug build containing symbols and displaying errors in Gens KMod log (see [Tuto Introduction](https://github.com/Stephane-D/SGDK/wiki/Tuto-Introduction) page)
 * _asm _--> used to generate assembly listing

@@ -29,6 +29,6 @@ It's not as convenient than real GDB debugging but still better than nothing :)
 
 The problem of Gens Kmod is that it has some flaws, first it has some bugs / memory leaks and secondly it's quite inaccurate in general so be sure to always test on more accurate emulators when possible (as [BlastEm](https://www.retrodev.com/blastem/)) or directly on the real hardware. Another good emulator for its debugging features is [Regen Debug version](https://retrocdn.net/images/2/24/Regen0972D.7z), while not being as accurate than BlastEm, it's still much better then Gens KMod in that aspect and it offers some exclusive debugging features.
 
-I hope these informations will help you in your debugging process.
+***
 
 If you feel ready then you can continue on the [Hello World tutorial](Tuto-Hello-World) !

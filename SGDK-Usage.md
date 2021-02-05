@@ -6,7 +6,7 @@ SGDK uses a generic makefile to compile project. In order to be properly recogni
 * **res** = resource files<br>
 * **out** = output files (will be created automatically)<br>
 
-where
+**where**
   * source files can be _.c_ (C source file), _.s_ (68k assembly source file) or _.s80_ (Z80 assembly source file)
   * include files can be _.h_ (C include file) or _.inc_ (assembly include file)
   * primary resource files should be _.res_ (resource definition file compiled by _rescomp_ tool, see [bin/rescomp.txt](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt) file)
@@ -19,7 +19,6 @@ where
     * _.bin_ = binary data file
     * _.c_ = C source file
     * _.s_ = 68k assembly source file
-  You can read the [bin/rescomp.txt](https://raw.githubusercontent.com/Stephane-D/SGDK/master/bin/rescomp.txt) file to have more information about supported resource files.
 
 **The makefile supports 3 different profiles:**
 * _release_ (default) --> release / optimized build

@@ -26,7 +26,7 @@ Get the last version: [SGDK 1.62](https://github.com/Stephane-D/SGDK/releases/do
 ---
 
 
-## Changelog 1.62 (march 2021) ##
+## Changelog 1.62 (March 2021) ##
 
 **COMPILER**
 * RESCOMP
@@ -101,7 +101,7 @@ Get the last version: [SGDK 1.62](https://github.com/Stephane-D/SGDK/releases/do
   - better score computation for Sprite part (also now comparable to others tests)
 
 
-## Changelog 1.60 (december 2020) ##
+## Changelog 1.60 (December 2020) ##
 
 **COMPILER**
 * APLIB

@@ -8,7 +8,7 @@
 
 ![https://github.com/Stephane-D/SGDK/wiki/images/cb_02.jpg](https://github.com/Stephane-D/SGDK/wiki/images/cb_02.jpg)
 
-4. _Toolchain executables_ tab, enter the mini dev kit path (as you set in GDK\_WIN) in the _Compiler's installation directory_. Unfortunately it does not accept variable name so you have to enter it to its own. Then set the executable filename as on the picture:
+4. _Toolchain executables_ tab, enter the SGDK path in the _Compiler's installation directory_. Unfortunately it does not accept variable name so you have to enter it to its own. Then set the executable filename as on the picture:
 
 ![https://github.com/Stephane-D/SGDK/wiki/images/cb_03.jpg](https://github.com/Stephane-D/SGDK/wiki/images/cb_03.jpg)
 

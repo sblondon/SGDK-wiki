@@ -30,7 +30,7 @@ SGDK uses a generic makefile to compile project. In order to be properly recogni
 **So to compile your project you need to use the following command directly from your project folder:**
 <pre>SGDK_PATH\bin\make -f SGDK_PATH\makefile.gen</pre>
 
-Don't forget that _SGDK_PATH_ refer to the full path where you installed SGDK (don't forget to also specify the drive letter - ex D:\SGDK).
+Don't forget that `SGDK_PATH` refer to the full path where you installed SGDK (don't forget to also specify the drive letter - ex D:\SGDK).
 
 Note that if you omit the profile it will use the _release_ one by default, if you want to use the debug build you will need to use:
 <pre>SGDK_PATH\bin\make -f SGDK_PATH\makefile.gen debug</pre>

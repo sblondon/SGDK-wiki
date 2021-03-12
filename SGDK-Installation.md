@@ -1,6 +1,6 @@
 **Windows OS only** (refer to README file for others OS)
 
-1. Install Java on your system (version 8 at least). You can find Java 8 for 64 bit Windows [here](http://icy.bioimageanalysis.org/upload/jre-8u281-windows-x64.exe).
+1. Install Java on your system as the resource compiler tool need it. You need Java 8 at least, you can find it for 64 bit Windows [here](http://icy.bioimageanalysis.org/upload/jre-8u281-windows-x64.exe).
 2. Download the SGDK archive from the [Download page](https://github.com/Stephane-D/SGDK/wiki/Download) and unzip it where it suits to you, for instance _D:\sgdk_
 3. Define **_GDK_** environment variable with your installation path **in unix path format** (_D:/sgdk_).
 4. Define **_GDK_WIN_** which still point to your installation path but **in windows path format** (_D:\sgdk_).

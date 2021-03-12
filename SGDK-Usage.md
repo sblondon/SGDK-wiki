@@ -28,10 +28,12 @@ SGDK uses a generic makefile to compile project. In order to be properly recogni
 * _asm_ --> used to generate assembly listing
 
 **So to compile your project you need to use the following command directly from your project folder:**
-<pre>%GDK_WIN%\bin\make -f %GDK_WIN%\makefile.gen</pre>
+<pre>SGDK_PATH\bin\make -f SGDK_PATH\makefile.gen</pre>
+
+Don't forget that _SGDK_PATH_ refer to the full path where you installed SGDK (don't forget to also specify the drive letter - ex D:\SGDK).
 
 Note that if you omit the profile it will use the _release_ one by default, if you want to use the debug build you will need to use:
-<pre>%GDK_WIN%\bin\make -f %GDK_WIN%\makefile.gen debug</pre>
+<pre>SGDK_PATH\bin\make -f SGDK_PATH\makefile.gen debug</pre>
 
 Normally if everything went right you should obtain a **_rom.bin_** file in the _out_ folder.
 You can directly load this _rom.bin_ file into an emulator (or put on your flash cart if you have one) to test it.

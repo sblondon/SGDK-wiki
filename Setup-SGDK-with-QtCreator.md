@@ -20,7 +20,7 @@
 ![](https://raw.githubusercontent.com/wiki/AbigailBuccaneer/sgdk/images/sgdk-with-qtcreator/09-projects.png)
 9. Expand the Build Environment section by pressing **Details ▼** button. On the right, click **Add**. Set the name of the new variable to `GDK`, and its value to the location where you extracted the SGDK to (with forward slashes).  
 ![](https://raw.githubusercontent.com/wiki/AbigailBuccaneer/sgdk/images/sgdk-with-qtcreator/10-build-environment.png)
-10. Change the **Build Steps** and **Clean Steps**: Set the executable to `SGDK_PATH/bin/make.exe`, and the arguments to `-f SGDK_PATH/makefile.gen`. For the Build Steps, untick all the targets; for the Clean Steps, leave `Clean` ticked.  
+10. Change the **Build Steps** and **Clean Steps**: Set the executable to `SGDK_PATH/bin/make.exe`, and the arguments to `-f SGDK_PATH/makefile.gen` where `SGDK_PATH` refer to your SGDK installation path. For the Build Steps, untick all the targets; for the Clean Steps, leave `Clean` ticked.  
 ![](https://raw.githubusercontent.com/wiki/AbigailBuccaneer/sgdk/images/sgdk-with-qtcreator/11-make-steps.png)
 11. Build the project by pressing the hammer in the bottom-left. It should build successfully and create `out/rom.bin` in your project root.
 ![](https://raw.githubusercontent.com/wiki/AbigailBuccaneer/sgdk/images/sgdk-with-qtcreator/12-build.png)

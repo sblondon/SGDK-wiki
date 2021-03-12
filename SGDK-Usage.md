@@ -23,7 +23,7 @@ SGDK uses a generic makefile to compile project. In order to be properly recogni
 ***
 
 **The makefile supports 3 different profiles:**
-* _release_ (default) --> release / optimized build
+* _release_ --> release / optimized build (default)
 * _debug_ --> debug build containing symbols and displaying errors in Gens KMod log (see [Tuto Introduction](https://github.com/Stephane-D/SGDK/wiki/Tuto-Introduction) page)
 * _asm_ --> used to generate assembly listing
 

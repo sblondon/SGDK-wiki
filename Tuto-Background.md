@@ -1,4 +1,4 @@
-## High Level API (new): MAP ##
+## High Level API: MAP ##
 
 **This is the API you should use by default as it's easy to use and allow to handle large background map.<br>**
 <br>
@@ -19,7 +19,7 @@ So let's see how that works..
 * Now you created the Map object, you can just use `MAP_scrollTo(bga, x, y)` to scroll your background at the specified _x_, _y_ position :)
 * When you're done with the _Map_ just use `MEM_free(map)` to release it.
 
-And that is ! You don't need more than that to actually get your background plan scrolling.
+And that is ! You don't need more than that to actually get your background plan scrolling :)
 
 ## Low Level API: TileMap ##
 

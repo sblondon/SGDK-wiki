@@ -1,6 +1,6 @@
 ## Download ##
 
-Get the last version: [SGDK 1.62](https://linkify.me/RZPR1dS)
+Get the last version: [SGDK 1.62](https://github.com/Stephane-D/SGDK/releases/download/v1.62/sgdk162.7z)
 
 **Old versions**
   * [SGDK 1.60](https://github.com/Stephane-D/SGDK/releases/download/v1.60/sgdk160.7z)

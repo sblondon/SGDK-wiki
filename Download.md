@@ -3,7 +3,7 @@
 Get the last version: [SGDK 1.70](https://github.com/Stephane-D/SGDK/releases/download/v1.70/sgdk170.7z)
 
 **Old versions**
-  * [SGDK 1.62](https://github.com/Stephane-D/SGDK/releases/download/v1.65/sgdk165.7z)
+  * [SGDK 1.65](https://github.com/Stephane-D/SGDK/releases/download/v1.65/sgdk165.7z)
   * [SGDK 1.62](https://github.com/Stephane-D/SGDK/releases/download/v1.62/sgdk162.7z)
   * [SGDK 1.60](https://github.com/Stephane-D/SGDK/releases/download/v1.60/sgdk160.7z)
   * [SGDK 1.51](https://github.com/Stephane-D/SGDK/releases/download/v1.51/sgdk151.7z)

@@ -1,8 +1,9 @@
 ## Download ##
 
-Get the last version: [SGDK 1.65](https://github.com/Stephane-D/SGDK/releases/download/v1.65/sgdk165.7z)
+Get the last version: [SGDK 1.70](https://github.com/Stephane-D/SGDK/releases/download/v1.70/sgdk170.7z)
 
 **Old versions**
+  * [SGDK 1.62](https://github.com/Stephane-D/SGDK/releases/download/v1.65/sgdk165.7z)
   * [SGDK 1.62](https://github.com/Stephane-D/SGDK/releases/download/v1.62/sgdk162.7z)
   * [SGDK 1.60](https://github.com/Stephane-D/SGDK/releases/download/v1.60/sgdk160.7z)
   * [SGDK 1.51](https://github.com/Stephane-D/SGDK/releases/download/v1.51/sgdk151.7z)
@@ -25,6 +26,73 @@ Get the last version: [SGDK 1.65](https://github.com/Stephane-D/SGDK/releases/do
   * [SGDK 0.80](https://pc.cd/S9u7)
 
 ---
+
+
+## Changelog 1.70 (february 2022) ##
+
+**COMPILER**
+* fixed bug in sizebnd companion tool
+* RESCOMP
+  - fixed compression for BIN resource (AUTO cannot be accepted here)
+  - fixed a small bug preventing having a transparent tile with high priority or palette index > 0
+  - fixed a bug with 'opt' set to NONE in SPRITE resource
+  - fixed illegal sun 'WaveFileReader' class usage for WAV file resampling operation
+* APJ
+* MAKEFILE
+  - added 'EXTRA_FLAGS' entry to makefiles so we can use custom extra compilation flags
+  - added 'SGDK_GCC' define to identify SGDK compilation toolchain if needed (when used in larger build frameworks)
+  - modifications to support Linux native toolchains (thanks to Doragasu)
+* LINK
+  - now use objcopy instead of ld to generate rom_head.bin (improve compatibility with others GCC)
+* README
+  - added Doragasu references / version update
+  - added DOA game reference
+* DOCKER
+  - use unprivileged sgdk user to avoid root privilege usage (thanks to Doragasu)
+  - Modifications to support Linux native toolchains (thanks to Doragasu)
+  - minors tweaks
+
+**LIBRARY**
+* added multitask support - see 'task' unit for more details (thanks to Doragasu)
+* added MegaWifi support - module should be enable in config.h file (thanks to Doragasu)
+* SPRITE
+* VDP
+  - small fix to VDP_resetScreen() function to avoid a stack overflow on failure
+  - added VDP_drawTextEx(..), VDP_clearTextEx(..) and VDP_clearTextAreaEx(..) methods (can use DMA / DMA_QUEUE)
+* MAP
+  - added wrapping support (map size need to be aligned on power of 2)
+  - added MAP_scrollToEx(..) method to allow forced full map redraw
+  - fixed a bug on initial map refresh
+  - fixed a small bug on full map refresh
+* MATH
+  - added getNextPow2(..) method
+  - added casting to int to fix conversion (safer)
+* SYS
+  - added VDP_setExtInterrupt(..) method and fixed ext interrupt enable stat…
+  - added new kprintf(..) method for easier KMod debug logging
+  - minor tweak on mapper banking logic
+* DMA
+  - removed Z80 halt/resume hack before triggering DMA (was not preventing bus clash anyway)
+* PAL
+  - fixed first set palette operation not always done in vblank during fading process (CRAM dots)
+  - simpler setFadePalette(..) implementation 
+  - updated to use color value rounding instead of truncation for RGB24_TO_VDPCOLOR(..) macro
+  - added new RGB_TO_VDPCOLOR macros (thanks to emmanuel)
+* STRING
+  - modified intToStr(..) to display hexa value for too large number
+* for safety HALT_Z80_ON_IO is also enable by default (config.h file)
+* some refactoring
+* changed u16 to bool in some declarations
+* documentation fixes / cleanups / updates
+* cleanup, removed old deprecated units / headers
+
+**SAMPLE**
+* added linescroll sample
+* added multitasking sample (thanks to Doragasu)
+* added MegaWifi sample (thanks to Doragasu)
+* BENCHMARK
+  - updated to fix tests when using pure C (still not perfect)
+
 
 ## Changelog 1.65 (july 2021) ##
 

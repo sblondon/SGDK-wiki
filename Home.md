@@ -1,5 +1,3 @@
-[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://standwithukraine.pp.ua)
-
 ## SGDK Wiki ##
 
 You will find in these pages help to get started with [SGDK](https://github.com/Stephane-D/SGDK/blob/master/readme.md)

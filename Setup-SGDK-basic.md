@@ -1,0 +1,1 @@
+Bonjour, j'essaye d'installer SGDK-master mais impossible de l'installer je teclecharge depuis git hub ensuite j'installe dans la variable de devellopment au niveau du path le chemin du sgdk et ensuite rien a faire le terminal ne reconnais pas sgdk et encore moins sgdk init help me please j'aimerai tellment dev un jeu sur megadrive merci du retour que vous me ferez

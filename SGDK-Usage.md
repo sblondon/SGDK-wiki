@@ -30,15 +30,15 @@ SGDK uses a generic makefile to compile the project. In order to be properly rec
 **So to compile your project you need to use the following command directly from your project folder:**
 
 ```console
-SGDK_PATH\bin\make -f SGDK_PATH\makefile.gen
+<SGDK_PATH>\bin\make -f <SGDK_PATH>\makefile.gen
 ```
 
-Don't forget that `SGDK_PATH` refer to the full path where you installed SGDK (don't forget to also specify the drive letter - ex `D:\SGDK`).
+Don't forget that `<SGDK_PATH>` refer to the **full** path where you installed SGDK (don't forget to also specify the drive letter - ex `D:\SGDK`).
 
 Note that if you omit the profile it will use the _release_ one by default, if you want to use the debug build you will need to use:
 
 ```console
-SGDK_PATH\bin\make -f SGDK_PATH\makefile.gen debug
+<SGDK_PATH>\bin\make -f <SGDK_PATH>\makefile.gen debug
 ```
 
 Normally if everything went right you should obtain a **_rom.bin_** file in the _out_ folder.

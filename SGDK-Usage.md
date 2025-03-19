@@ -27,7 +27,7 @@ SGDK uses a generic makefile to compile the project. In order to be properly rec
 * _debug_ --> debug build containing symbols and displaying errors in Gens KMod log (see [Tuto Introduction](https://github.com/Stephane-D/SGDK/wiki/Tuto-Introduction) page)
 * _asm_ --> used to generate assembly listing
 
-**So to compile your project you need to use the following command (from 'cmd.exe' terminal) directly from your project folder:**
+**So to compile your project you need to type the following command (cmd.exe terminal) directly from your project folder:**
 
 ```console
 <SGDK_PATH>\bin\make -f <SGDK_PATH>\makefile.gen

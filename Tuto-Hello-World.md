@@ -3,14 +3,14 @@
 Whenever you use [Code::Block](Setup-SGDK-with-CodeBlocks), [Eclipse](Setup-SGDK-with-Eclipse), [QtCreator](Setup-SGDK-with-QtCreator) or [any other source code editor](SGDK-Usage), you need your `main` function.
 
 ```
-int main(u16 hard)
+int main(bool hard)
 {
     return 0;
 }
 ```
 
 As any C program this function is your starting point and is automatically called on start up.<br>
-Note that with SGDK (and this is specific to SGDK), your `main` function receive a single parameter named `hard` which allow to know if you are on a hard reset (hard = 1 mean that we just turned the system ON) or on a soft reset (hard = 0 mean that reset button was pressed).
+Note that with SGDK (and this is specific to SGDK), your `main` function receive a single parameter named `hard` which allow to know if you are on a hard reset (hard = true mean that we just turned the system ON) or on a soft reset (hard = false mean that reset button was pressed).
 
 Before calling ```main``` method, SGDK initializes several things for you:
   * clear RAM and initialize variables
@@ -34,7 +34,7 @@ Ok so if you correctly read the `VDP_drawText(<your_text>, <x>, <y>)` documentat
 ```
 #include <genesis.h>
 
-int main(u16 hard)
+int main(bool hard)
 {
     VDP_drawText("Hello World!", 10, 13);
 
@@ -49,7 +49,7 @@ So a more Genny Hello World is more like this:
 ```
 #include <genesis.h>
 
-int main(u16 hard)
+int main(bool hard)
 {
     VDP_drawText("Hello Genny World!", 10, 13);
 
@@ -76,7 +76,7 @@ So, this time, you could write your first Genesis fully compliant demo:
 ```
 #include <genesis.h>
 
-int main(u16 hard)
+int main(bool hard)
 {
     VDP_drawText("Hello Genny World!", 10, 13);
 
@@ -104,7 +104,7 @@ So here's the final version you need to use starting with SGDK 1.6:
 ```
 #include <genesis.h>
 
-int main(u16 hard)
+int main(bool hard)
 {
     VDP_drawText("Hello Genny World!", 10, 13);
 

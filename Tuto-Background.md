@@ -17,9 +17,54 @@ So let's see how that works..
   Note than if you used compression for your MAP resource SGDK will need to unpack it in memory so be sure to have enough memory for that first. If the map is too large to fit in memory unpacked, then just disable compression on _MAP_ resource definition.
 
 * Now you created the Map object, you can just use `MAP_scrollTo(bga, x, y)` to scroll your background at the specified _x_, _y_ position :)
-* When you're done with the _Map_ just use `MEM_free(map)` to release it.
+* When you're done with the _Map_ just use `MEM_free(bga)` to release it.
 
 And that is ! You don't need more than that to actually get your background plan scrolling :)
+
+Here's a minimal sample to demonstrate it:
+**res_gfx.res**
+```PALETTE palette_all "gfx/S1_GHZ1_FG.png"
+TILESET bga_tileset "gfx/S1_GHZ1_FG.png" BEST ALL
+MAP bga_map "gfx/S1_GHZ1_FG.png" bga_tileset BEST 0```
+
+**main.c**
+```
+#include <genesis.h>
+#include "res_gfx.h"
+
+Map *bga;
+
+int main(bool hard)
+{
+    u16 palette[1];
+
+    VDP_loadTileSet(&bga_tileset, TILE_USER_INDEX, DMA);
+
+    // init backgrounds
+    bga = MAP_create(&bga_map, BG_A, TILE_ATTR_FULL(PAL0, FALSE, FALSE, FALSE, TILE_USER_INDEX));
+
+    SYS_doVBlankProcess();
+
+    memcpy(&palette[0], palette_all.data, 64 * 2);
+
+    // fade in
+    PAL_fadeIn(0, (4 * 16) - 1, palette, 20, TRUE);
+
+    MAP_scrollTo(bga, 9920, 1056);
+
+    while(TRUE)
+    {
+        // sync frame and do vblank process
+        SYS_doVBlankProcess();
+    }
+
+    // release maps
+    MEM_free(bga);
+
+    return 0;
+}
+```
+
 
 ## Low Level API: TileMap ##
 

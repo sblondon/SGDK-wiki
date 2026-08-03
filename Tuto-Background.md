@@ -25,14 +25,15 @@ And that is ! You don't need more than that to actually get your background plan
 <br>
 ### res_gfx.res
 ```
-PALETTE palette_all \"gfx/S1_GHZ1_FG.png\"
-TILESET bga_tileset \"gfx/S1_GHZ1_FG.png\" BEST ALL
-MAP bga_map \"gfx/S1_GHZ1_FG.png\" bga_tileset BEST 0```
-
+PALETTE palette_all "gfx/S1_GHZ1_FG.png"
+TILESET bga_tileset "gfx/S1_GHZ1_FG.png" BEST ALL
+MAP bga_map "gfx/S1_GHZ1_FG.png" bga_tileset BEST 0
+```
+<br>
 ### main.c
 ```
 #include <genesis.h>
-#include \"res_gfx.h\"
+#include "res_gfx.h"
 
 Map *bga;
 

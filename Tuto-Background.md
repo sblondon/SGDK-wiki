@@ -22,8 +22,10 @@ So let's see how that works..
 And that is ! You don't need more than that to actually get your background plan scrolling :)
 
 **Here's a minimal sample to demonstrate it:**<br>
+<br>
 res_gfx.res<br>
-```PALETTE palette_all "gfx/S1_GHZ1_FG.png"
+```
+PALETTE palette_all "gfx/S1_GHZ1_FG.png"
 TILESET bga_tileset "gfx/S1_GHZ1_FG.png" BEST ALL
 MAP bga_map "gfx/S1_GHZ1_FG.png" bga_tileset BEST 0
 ```

@@ -245,7 +245,7 @@ So, after compiling the moon as an IMAGE in the .res file, and including `moon.h
 ```
 #include "moon.h"
 
-int main( )
+int main(bool hard)
 {
 	// get the palette data of moon
 	VDP_setPalette(PAL1, moon.palette->data);

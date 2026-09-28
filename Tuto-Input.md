@@ -29,7 +29,7 @@ void myJoyHandler( u16 joy, u16 changed, u16 state)
 	}	
 }
 
-int main( )
+int main(bool hard)
 {
 	JOY_init();
 	JOY_setEventHandler( &myJoyHandler );
@@ -81,7 +81,7 @@ void myJoyHandler( u16 joy, u16 changed, u16 state)
 	}	
 }
 
-int main( )
+int main(bool hard)
 {
 	JOY_init();
 	JOY_setEventHandler( &myJoyHandler );
@@ -109,7 +109,7 @@ The informations are defined on JOY_init() and after at least one refresh.
 
 Ex:
 ```
-int main( )
+int main(bool hard)
 {
 	JOY_init();
 	VDP_waitVSync();
@@ -156,7 +156,7 @@ void myMouseHandler( u16 joy, s8 xDelta, s8 yDelta, u16 buttonState)
 	}
 }
 
-int main( )
+int main(bool hard)
 {
 	JOY_init();
 	JOY_setEventHandler( &myJoyHandler ); //mouse button pressed is handled like a joypad, mainly to handle start
